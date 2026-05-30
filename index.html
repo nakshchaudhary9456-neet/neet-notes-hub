@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Doctors - NEET & Board Prep Hub</title>
+    <style>
+        /* Premium Dark Theme Stylesheet */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0b1528; /* Deep Dark Blue Background */
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            width: 100%;
+            max-width: 480px; /* Mobile first premium layout */
+            padding: 25px 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        
+        /* Top Badge */
+        .top-badge {
+            background-color: rgba(0, 150, 136, 0.15);
+            color: #00ffcc;
+            border: 1px solid rgba(0, 255, 204, 0.3);
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+        .top-badge::before {
+            content: "●";
+            font-size: 0.7rem;
+        }
+
+        /* Branding Section */
+        .brand-logo {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 2.6rem;
+            margin: 0;
+            font-weight: 800;
+            background: linear-gradient(45deg, #00ffcc, #82b1ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .tagline {
+            font-size: 1rem;
+            color: #a0aec0;
+            line-height: 1.5;
+            margin: 15px 10px 25px 10px;
+        }
+
+        /* Badges for Creators */
+        .badge-box {
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 12px;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            color: #e2e8f0;
+            margin-bottom: 12px;
+        }
+        .badge-box strong {
+            color: #ffffff;
+        }
+
+        /* Section Heading */
+        .section-title {
+            text-align: left;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #718096;
+            margin: 35px 0 15px 5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Group Cards & Links */
+        .group-card {
+            background-color: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 18px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            text-align: left;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .group-card:hover {
+            background-color: rgba(255, 255, 255, 0.06);
+            border-color: rgba(0, 255, 204, 0.3);
+            transform: translateY(-2px);
+        }
+        .icon-area {
+            font-size: 1.8rem;
+            margin-right: 15px;
+            background-color: rgba(0, 255, 204, 0.1);
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .group-card:nth-child(3) .icon-area {
+            background-color: rgba(130, 177, 255, 0.1);
+        }
+        .text-area {
+            flex-grow: 1;
+        }
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .card-desc {
+            font-size: 0.85rem;
+            color: #a0aec0;
+        }
+        .arrow-icon {
+            color: #718096;
+            font-size: 1.1rem;
+            padding-left: 10px;
+        }
+
+        /* Study Material Block */
+        .study-block {
+            background: linear-gradient(135deg, rgba(0, 150, 136, 0.1), rgba(11, 21, 40, 0.5));
+            border: 1px solid rgba(0, 150, 136, 0.2);
+            border-radius: 20px;
+            padding: 20px;
+            text-align: left;
+            margin-top: 25px;
+        }
+        .study-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .live-tag {
+            background-color: #00cc66;
+            color: white;
+            font-size: 0.65rem;
+            font-weight: 800;
+            padding: 3px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: inline-block;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Top Indicator Badge -->
+        <div class="top-badge">NEET & Board Prep Hub</div>
+
+        <!-- Main Icon and Header -->
+        <div class="brand-logo">🩺</div>
+        <h1>Future Doctors</h1>
+        <p class="tagline">Smart digital library for instant chapter-wise books, handmade notes, and test modules.</p>
+
+        <!-- Founder Details -->
+        <div class="badge-box">
+            👑 Founded by: <strong>Naksh Chaudhary</strong>
+        </div>
+
+        <!-- Channels & Groups Section -->
+        <div class="section-title">
+            💬 Official Channels & Groups
+        </div>
+
+        <!-- 1. Main WhatsApp Group (Notes / Material) -->
+        <a href="https://chat.whatsapp.com/JORboxhbf3LL0sx6eHw8JB?mode=ac_t" target="_blank" class="group-card">
+            <div class="icon-area">🟢</div>
+            <div class="text-area">
+                <div class="card-title">Main WhatsApp Group</div>
+                <div class="card-desc">Sirf PDFs, Books aur important notes ke liye</div>
+            </div>
+            <div class="arrow-icon">↗</div>
+        </a>
+
+        <!-- 2. Doubt Chat Group (Discussion & Suggestions) -->
+        <a href="https://chat.whatsapp.com/EtrXE1CSa3lFc7xnmDRBVt?mode=ac_t" target="_blank" class="group-card">
+            <div class="icon-area">💬</div>
+            <div class="text-area">
+                <div class="card-title">Doubt Chat Group</div>
+                <div class="card-desc">Apne sawaal pucho, discuss karo aur suggestions lo</div>
+            </div>
+            <div class="arrow-icon">↗</div>
+        </a>
+
+        <!-- Biology/Notes Preview Block -->
+        <div class="study-block">
+            <div class="study-header">
+                <span>🧬</span> Biology Section
+            </div>
+            <div class="card-desc" style="margin-bottom: 10px;">NCERT, Fingertips, Short Notes & Diagrams</div>
+            <span class="live-tag">● Live Sync</span>
+        </div>
+
+    </div>
+
+</body>
+  </html>
+
