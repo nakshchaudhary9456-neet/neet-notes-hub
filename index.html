@@ -3,87 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Future Doctors Hub</title>
+    <title>Future Doctors Hub | Naksh Chaudhary</title>
     <style>
+        /* ROYAL PREMIUM THEME BY NAKSH CHAUDHARY */
         body {
-            background-color: #0b1329;
-            color: #ffffff;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #050b18;
+            color: #e2e8f0;
+            font-family: 'Poppins', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             margin: 0;
             padding: 15px;
+            background-image: radial-gradient(circle at top right, rgba(218, 165, 32, 0.05), transparent 400px);
         }
         .container {
-            max-width: 500px;
+            max-width: 480px;
             margin: 0 auto;
         }
         .card {
-            background: #111c3a;
-            border-radius: 20px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            background: linear-gradient(145deg, #0d1527, #090f1c);
+            border: 1px solid rgba(255, 215, 0, 0.08);
+            border-radius: 24px;
+            padding: 22px;
+            margin-bottom: 22px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.4), inset 0 1px 1px rgba(255,255,255,0.05);
         }
-        .hero-card {
-            background: linear-gradient(135deg, #1e3a8a, #0f172a);
-            border: 2px solid #38bdf8;
+        
+        /* ALAKH SIR STYLE ROYAL OWNER CARD */
+        .owner-hero-card {
+            background: linear-gradient(135deg, #0a1128 0%, #101f42 100%);
+            border: 2px solid #d4af37;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(212, 175, 55, 0.15);
         }
+        .owner-hero-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(212,175,55,0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .owner-avatar-container {
+            position: relative;
+            width: 130px;
+            height: 130px;
+            margin: 10px auto 15px auto;
+        }
+        .owner-avatar {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #d4af37;
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+        }
+        .verified-badge {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            background: #d4af37;
+            color: #050b18;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            border: 2px solid #101f42;
+        }
+        .royal-title {
+            color: #ffffff;
+            font-size: 1.8rem;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            margin: 0;
+            text-shadow: 0 2px 10px rgba(255,255,255,0.1);
+        }
+        .mentor-tag {
+            color: #d4af37;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin: 8px 0;
+            display: inline-block;
+            background: rgba(212, 175, 55, 0.1);
+            padding: 4px 14px;
+            border-radius: 50px;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .owner-name {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin: 5px 0 12px 0;
+            letter-spacing: 0.5px;
+        }
+        .mission-badge {
+            background: linear-gradient(90deg, rgba(212,175,55,0.2), rgba(212,175,55,0.05));
+            color: #f3e5ab;
+            padding: 6px 18px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            display: inline-block;
+        }
+
+        /* GRID AND BUTTONS */
         .grid-2x2 {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 12px;
-            margin-top: 15px;
+            gap: 14px;
+            margin-top: 18px;
         }
         .btn {
-            background: #2563eb;
-            color: white;
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            color: #f8fafc;
             text-decoration: none;
-            padding: 12px 8px;
-            border-radius: 12px;
+            padding: 14px 10px;
+            border-radius: 16px;
             text-align: center;
-            font-size: 0.85rem;
-            font-weight: bold;
+            font-size: 0.88rem;
+            font-weight: 600;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 5px;
-            transition: transform 0.2s;
+            gap: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: all 0.2s ease;
         }
         .btn:active {
-            transform: scale(0.95);
+            transform: scale(0.96);
+            background: #111827;
         }
-        .chat-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-decoration: none;
-            padding: 14px;
-            border-radius: 12px;
-            font-weight: bold;
-            font-size: 1rem;
-            margin-top: 10px;
-            transition: transform 0.2s;
-        }
-        .chat-btn:active {
-            transform: scale(0.98);
-        }
+        
+        /* SUBJECT BORDERS */
+        .physics-card { border-left: 4px solid #f59e0b; }
+        .chemistry-card { border-left: 4px solid #06b6d4; }
+        .biology-card { border-left: 4px solid #10b981; }
+        .library-card { border-left: 4px solid #8b5cf6; }
+
         .section-title {
-            font-size: 1.4rem;
+            font-size: 1.35rem;
+            font-weight: 700;
             margin: 0;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 10px;
         }
+
+        /* PREMIUM LINK CHAT BUTTONS */
+        .chat-container-card {
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            background: linear-gradient(145deg, #0e172c, #070d1a);
+        }
+        .chat-action-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 16px;
+            border-radius: 16px;
+            font-weight: 700;
+            font-size: 1rem;
+            margin-top: 12px;
+            transition: all 0.2s ease;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+        }
+        .chat-action-btn:active {
+            transform: scale(0.97);
+        }
+
+        /* MOTIVATION BOXES */
         .quote-box {
-            background: linear-gradient(90deg, #f59e0b, #7c3aed);
-            padding: 15px;
-            border-radius: 15px;
-            font-style: italic;
-            font-size: 0.9rem;
-            line-height: 1.4;
-            margin-bottom: 20px;
-            border-left: 5px solid #ef4444;
+            background: linear-gradient(135deg, rgba(212,175,55,0.15) 0%, rgba(15,23,42,0.4) 100%);
+            padding: 18px;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 22px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            color: #f3e5ab;
+            text-align: center;
+            font-weight: 500;
+        }
+        .final-motivation-card {
+            background: linear-gradient(135deg, #1e1b4b 0%, #0f172a 100%);
+            border: 1px dashed #ef4444;
+            text-align: center;
+        }
+
+        /* SUPPORT SECTION */
+        .support-card {
+            border: 1px solid rgba(255, 215, 0, 0.15);
+            text-align: center;
+            background: linear-gradient(180deg, #0c1426, #060b14);
+        }
+        .qr-code {
+            border-radius: 16px;
+            background: #ffffff;
+            padding: 8px;
+            margin: 15px 0;
+            width: 135px;
+            height: 135px;
+            box-shadow: 0 0 20px rgba(255,255,255,0.05);
         }
     </style>
 </head>
@@ -91,21 +223,28 @@
 
 <div class="container">
 
-    <!-- HERO HEADER -->
-    <div class="card hero-card">
-        <h1 style="color: #38bdf8; margin: 0; font-size: 1.8rem; letter-spacing: 1px;">🩺 FUTURE DOCTORS 🩺</h1>
-        <p style="color: #f59e0b; font-weight: bold; margin: 10px 0 5px 0; font-size: 0.9rem;">🏅 PLATFORM OWNER & MENTOR 🏅</p>
-        <h2 style="color: #fcd34d; margin: 0 0 12px 0; font-size: 1.5rem; font-family: Georgia, serif;">NAKSH CHAUDHARY</h2>
-        <span style="background: rgba(56, 189, 248, 0.2); color: #38bdf8; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; font-weight: bold;">✨ Mission NEET 2027/2028 ✨</span>
+    <!-- ROYAL HERO HEADER WITH OWNER IMAGE -->
+    <div class="card owner-hero-card">
+        <h1 class="royal-title">🩺 FUTURE DOCTORS 🩺</h1>
+        
+        <!-- Premium Profile Frame -->
+        <div class="owner-avatar-container">
+            <img src="39015.png" alt="Naksh Chaudhary" class="owner-avatar">
+            <div class="verified-badge">✓</div>
+        </div>
+        
+        <span class="mentor-tag">🏅 Platform Owner & Mentor 🏅</span>
+        <div class="owner-name">NAKSH CHAUDHARY</div>
+        <div class="mission-badge">✨ Mission NEET 2027/2028 ✨</div>
     </div>
 
-    <!-- MOTIVATIONAL QUOTE -->
+    <!-- TOP MOTIVATIONAL QUOTE -->
     <div class="quote-box">
         "Stethoscope 🩺 ki keemat mehnat se chukani padti hai. Aaj ki jaagi hui raatein, kal naam ke aage lagne wale 'Dr.' ki shuruat hain!" 🔥💪
     </div>
 
     <!-- PHYSICS BOOSTER -->
-    <div class="card">
+    <div class="card physics-card">
         <h2 class="section-title" style="color: #f59e0b;">⚡ Physics Booster</h2>
         <div class="grid-2x2">
             <a href="#" class="btn">📚 Chapter Notes</a>
@@ -116,8 +255,8 @@
     </div>
 
     <!-- CHEMISTRY MAGIC -->
-    <div class="card">
-        <h2 class="section-title" style="color: #2dd4bf;">🧪 Chemistry Magic</h2>
+    <div class="card chemistry-card">
+        <h2 class="section-title" style="color: #06b6d4;">🧪 Chemistry Magic</h2>
         <div class="grid-2x2">
             <a href="#" class="btn">📚 Chapter Notes</a>
             <a href="#" class="btn">📝 Chapter PYQs</a>
@@ -127,8 +266,8 @@
     </div>
 
     <!-- BIOLOGY CORE -->
-    <div class="card">
-        <h2 class="section-title" style="color: #4ade80;">🌿 Biology Core</h2>
+    <div class="card biology-card">
+        <h2 class="section-title" style="color: #10b981;">🌿 Biology Core</h2>
         <div class="grid-2x2">
             <a href="#" class="btn">📚 Chapter Notes</a>
             <a href="#" class="btn">📝 Chapter PYQs</a>
@@ -138,59 +277,66 @@
     </div>
 
     <!-- REFERENCE LIBRARY -->
-    <div class="card">
-        <h2 class="section-title" style="color: #c084fc;">📖 Reference Library & Modules</h2>
-        <p style="color: #94a3b8; font-size: 0.8rem; margin: 5px 0 15px 0;">Allen, Akash, aur premium reference books ke premium modules direct access karein.</p>
-        <div class="grid-2x2" style="grid-template-columns: 1fr 1fr;">
-            <a href="#" class="btn" style="background: #2563eb;">🏢 Institute Modules</a>
-            <a href="#" class="btn" style="background: #2563eb;">📕 Reference Books</a>
+    <div class="card library-card">
+        <h2 class="section-title" style="color: #8b5cf6;">📖 Reference Library & Modules</h2>
+        <p style="color: #94a3b8; font-size: 0.82rem; margin: 6px 0 12px 0; line-height: 1.4;">Allen, Akash, aur premium reference books ke premium modules direct access karein.</p>
+        <div class="grid-2x2" style="margin-top: 5px;">
+            <a href="#" class="btn">🏢 Institute Modules</a>
+            <a href="#" class="btn">📕 Reference Books</a>
         </div>
     </div>
 
-    <!-- GROUP 1: NOTES & MATERIAL CHAT -->
-    <div class="card" style="border: 1px solid #25D366; background: rgba(37, 211, 102, 0.03);">
-        <h2 class="section-title" style="color: #25D366; font-size: 1.3rem;">🗂️ Realtime Student Chat (Notes)</h2>
-        <p style="color: #a7f3d0; font-size: 0.8rem; margin: 5px 0 15px 0;">WhatsApp Group ki tarah bina kisi login ke premium notes aur study material mangwayein!</p>
-        <a href="https://chat.whatsapp.com/JORboxhbf3LL0sx6eHw8JB?mode=ac_t" target="_blank" class="chat-btn" style="background: linear-gradient(135deg, #25D366, #128C7E); box-shadow: 0 4px 12px rgba(37, 211, 102, 0.2);">
-            ⚡ Open Notes Room (No Login Required)
+    <!-- DISCUSSION GROUP PORTAL -->
+    <div class="card chat-container-card" style="border-left: 4px solid #3b82f6;">
+        <h2 class="section-title" style="color: #3b82f6;">💬 Discussion & Doubt Arena</h2>
+        <p style="color: #94a3b8; font-size: 0.82rem; margin: 6px 0 12px 0;">Apne critical doubts share karein, seniors se strategy poochhein aur pure peer group ke sath connect rahein.</p>
+        <a href="https://chat.whatsapp.com/EtrXE1CSa3lFc7xnmDRBVt?mode=ac_t" target="_blank" class="chat-action-btn" style="background: linear-gradient(135deg, #2563eb, #1d4ed8);">
+            🤝 Join Discussion & Ask Doubts
         </a>
     </div>
 
-    <!-- GROUP 2: DOUBT & DISCUSSION CHAT -->
-    <div class="card" style="border: 1px solid #3b82f6; background: rgba(59, 130, 246, 0.03);">
-        <h2 class="section-title" style="color: #38bdf8; font-size: 1.3rem;">💬 Realtime Student Chat (Doubts)</h2>
-        <p style="color: #93c5fd; font-size: 0.8rem; margin: 5px 0 15px 0;">Apne saare doubts discuss karein aur baaki NEET aspirants se instant help payein!</p>
-        <a href="https://chat.whatsapp.com/EtrXE1CSa3lFc7xnmDRBVt?mode=ac_t" target="_blank" class="chat-btn" style="background: linear-gradient(135deg, #3b82f6, #1d4ed8); box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);">
-            ⚡ Open Doubt Room (No Login Required)
+    <!-- PREMIUM NOTES ROOM -->
+    <div class="card chat-container-card" style="border-left: 4px solid #25d366;">
+        <h2 class="section-title" style="color: #25d366;">🗂️ Premium Material Vault</h2>
+        <p style="color: #94a3b8; font-size: 0.82rem; margin: 6px 0 12px 0;">Haath se likhe toppers ke short notes, formula sheets aur naye modules regular interval par hasil karein.</p>
+        <a href="https://chat.whatsapp.com/JORboxhbf3LL0sx6eHw8JB?mode=ac_t" target="_blank" class="chat-action-btn" style="background: linear-gradient(135deg, #1ed760, #128c7e);">
+            🚀 Request Premium Study Material
         </a>
     </div>
 
     <!-- COMMUNITY GUIDELINES -->
-    <div class="card">
-        <h2 class="section-title" style="color: #38bdf8; font-size: 1.2rem;">📋 Community Guidelines</h2>
-        <ul style="padding-left: 20px; margin: 10px 0 0 0; color: #cbd5e1; font-size: 0.8rem; line-height: 1.5;">
-            <li style="margin-bottom: 8px;">📌 Saare material <b>*Google Drive Sync*</b> hain, yani jab bhi Naksh sir naye notes daalenge, bina website update kiye aapko yahan mil jayenge.</li>
-            <li style="margin-bottom: 8px;">📌 Chat room/groups mein koi bhi student bakwaas ya irrelevant baatein na kare, block kar diya jayega.</li>
-            <li>📌 Kisi bhi module ki demand ke liye directly WhatsApp Discussion portal par post karein.</li>
+    <div class="card" style="background: #090f1c;">
+        <h2 class="section-title" style="color: #94a3b8; font-size: 1.15rem;">📋 Elite Group Protocol</h2>
+        <ul style="padding-left: 18px; margin: 12px 0 0 0; color: #cbd5e1; font-size: 0.82rem; line-height: 1.6;">
+            <li style="margin-bottom: 6px;">📌 Saare material <b>*Google Drive Sync*</b> hain, Naksh Sir ke upload karte hi real-time updates milenge.</li>
+            <li style="margin-bottom: 6px;">📌 Study groups me gair-jaruri baatein completely prohibited hain. Discipline priority hai.</li>
+            <li>📌 Kisi bhi specific test series ya high-end module ke liye directly chat portal par notify karein.</li>
         </ul>
     </div>
 
-    <!-- SERVER SUPPORT -->
-    <div class="card" style="border: 1px solid #f59e0b; text-align: center;">
-        <h2 style="color: #f59e0b; margin: 0 0 10px 0; font-size: 1.2rem;">💰 Server & Maintenance Support</h2>
-        <p style="color: #cbd5e1; font-size: 0.8rem; margin-bottom: 15px;">If this website helps you in your NEET prep, consider supporting our platform to keep server free from ads! 🙏✨</p>
-        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=upi://pay?pa=naksh9@ptaxis" alt="QR Code" style="border-radius: 10px; background: white; padding: 5px; margin-bottom: 10px; width: 140px;">
-        <p style="color: #ef4444; font-family: monospace; font-size: 0.9rem; margin: 5px 0 0 0;">Official UPI ID: naksh9@ptaxis</p>
+    <!-- EXTRA ROYAL MOTIVATION CARD -->
+    <div class="card final-motivation-card">
+        <h3 style="color: #ef4444; margin: 0 0 8px 0; font-size: 1.2rem; letter-spacing: 1px;">⚡ Ranks Are Made Here! ⚡</h3>
+        <p style="color: #f8fafc; font-size: 0.88rem; line-height: 1.5; font-style: italic; margin: 0;">
+            "Yaad rakhna, NEET ka paper tumhari kismat nahi, tumhari zidd tay karegi. Jab log so rahe honge, tab tumhara jaagna hi tumhein hazaron ki bheed se alag banayega. Drop lene se behtar hai, abhi apna sab kuch jhonk do!" 🔥🔬
+        </p>
     </div>
 
-    <!-- FOOTER -->
-    <div style="text-align: center; color: #64748b; font-size: 0.75rem; padding: 10px 0 30px 0;">
+    <!-- SERVER SUPPORT -->
+    <div class="card support-card">
+        <h2 style="color: #d4af37; margin: 0 0 8px 0; font-size: 1.15rem; letter-spacing: 0.5px;">💰 Server Maintenance & Support</h2>
+        <p style="color: #94a3b8; font-size: 0.8rem; margin: 0;">Ad-free premium service maintain karne ke liye directly support karein! 🙏</p>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=upi://pay?pa=naksh9@ptaxis" alt="QR Code" class="qr-code">
+        <p style="color: #d4af37; font-family: monospace; font-size: 0.88rem; margin: 0; font-weight: bold;">UPI ID: naksh9@ptaxis</p>
+    </div>
+
+    <!-- ROYAL FOOTER -->
+    <div style="text-align: center; color: #475569; font-size: 0.72rem; padding: 5px 0 25px 0; letter-spacing: 0.5px;">
         © 2026 Future Doctors Hub. All Rights Reserved.<br>
-        Curated with ❤️ by Team Naksh Chaudhary
+        <span style="color: #64748b; font-weight: 600;">Engineered & Governed by Team Naksh Chaudhary</span>
     </div>
 
 </div>
 
 </body>
-        </html>
-            
+</html>
