@@ -1,49 +1,196 @@
-<!-- REALTIME STUDENT CHAT & DISCUSSION SECTION -->
-<div class="card" style="border: 1px solid #25D366; background: rgba(37, 211, 102, 0.03); padding: 20px; border-radius: 15px; margin-bottom: 20px;">
-    <div style="display: flex; align-items: center; margin-bottom: 15px;">
-        <span style="font-size: 1.5rem; margin-right: 10px;">💬</span>
-        <h2 style="color: #25D366; margin: 0; font-size: 1.4rem;">Realtime Student Chat</h2>
-    </div>
-    
-    <p style="color: #a7f3d0; font-size: 0.85rem; line-height: 1.4; margin-bottom: 20px;">
-        WhatsApp Group ki tarah bina kisi login ke doubts puchhein aur notes mangwayein!
-    </p>
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Doctors Hub</title>
+    <style>
+        body {
+            background-color: #0b1329;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 15px;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .card {
+            background: #111c3a;
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+        .hero-card {
+            background: linear-gradient(135deg, #1e3a8a, #0f172a);
+            border: 2px solid #38bdf8;
+            text-align: center;
+        }
+        .grid-2x2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 15px;
+        }
+        .btn {
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            padding: 12px 8px;
+            border-radius: 12px;
+            text-align: center;
+            font-size: 0.85rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            transition: transform 0.2s;
+        }
+        .btn:active {
+            transform: scale(0.95);
+        }
+        .chat-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            padding: 14px;
+            border-radius: 12px;
+            font-weight: bold;
+            font-size: 1rem;
+            margin-top: 10px;
+            transition: transform 0.2s;
+        }
+        .chat-btn:active {
+            transform: scale(0.98);
+        }
+        .section-title {
+            font-size: 1.4rem;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .quote-box {
+            background: linear-gradient(90deg, #f59e0b, #7c3aed);
+            padding: 15px;
+            border-radius: 15px;
+            font-style: italic;
+            font-size: 0.9rem;
+            line-height: 1.4;
+            margin-bottom: 20px;
+            border-left: 5px solid #ef4444;
+        }
+    </style>
+</head>
+<body>
 
-    <!-- BUTTON 1: NOTES & MATERIAL -->
-    <div style="margin-bottom: 15px;">
-        <a href="https://chat.whatsapp.com/JORboxhbf3LL0sx6eHw8JB?mode=ac_t" target="_blank" style="display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #25D366, #128C7E); color: white; text-decoration: none; padding: 12px; border-radius: 10px; font-weight: bold; font-size: 0.95rem; box-shadow: 0 4px 12px rgba(37, 211, 102, 0.2);">
-            🗂️ Join Notes & Material Group
-        </a>
-        <span style="display: block; text-align: center; color: #64748b; font-size: 0.75rem; margin-top: 4px;">(Sirf PDFs & Books ke liye)</span>
+<div class="container">
+
+    <!-- HERO HEADER -->
+    <div class="card hero-card">
+        <h1 style="color: #38bdf8; margin: 0; font-size: 1.8rem; letter-spacing: 1px;">🩺 FUTURE DOCTORS 🩺</h1>
+        <p style="color: #f59e0b; font-weight: bold; margin: 10px 0 5px 0; font-size: 0.9rem;">🏅 PLATFORM OWNER & MENTOR 🏅</p>
+        <h2 style="color: #fcd34d; margin: 0 0 12px 0; font-size: 1.5rem; font-family: Georgia, serif;">NAKSH CHAUDHARY</h2>
+        <span style="background: rgba(56, 189, 248, 0.2); color: #38bdf8; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; font-weight: bold;">✨ Mission NEET 2027/2028 ✨</span>
     </div>
 
-    <!-- BUTTON 2: DOUBT & DISCUSSION -->
-    <div>
-        <a href="https://chat.whatsapp.com/EtrXE1CSa3lFc7xnmDRBVt?mode=ac_t" target="_blank" style="display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #3b82f6, #1d4ed8); color: white; text-decoration: none; padding: 12px; border-radius: 10px; font-weight: bold; font-size: 0.95rem; box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);">
-            💬 Join Doubt & Chatting Group
-        </a>
-        <span style="display: block; text-align: center; color: #64748b; font-size: 0.75rem; margin-top: 4px;">(Discussion + Instant Help)</span>
+    <!-- MOTIVATIONAL QUOTE -->
+    <div class="quote-box">
+        "Stethoscope 🩺 ki keemat mehnat se chukani padti hai. Aaj ki jaagi hui raatein, kal naam ke aage lagne wale 'Dr.' ki shuruat hain!" 🔥💪
     </div>
+
+    <!-- PHYSICS BOOSTER -->
+    <div class="card">
+        <h2 class="section-title" style="color: #f59e0b;">⚡ Physics Booster</h2>
+        <div class="grid-2x2">
+            <a href="#" class="btn">📚 Chapter Notes</a>
+            <a href="#" class="btn">📝 Chapter PYQs</a>
+            <a href="#" class="btn">📐 Formula Sheet</a>
+            <a href="#" class="btn">⚙️ Derivations</a>
+        </div>
+    </div>
+
+    <!-- CHEMISTRY MAGIC -->
+    <div class="card">
+        <h2 class="section-title" style="color: #2dd4bf;">🧪 Chemistry Magic</h2>
+        <div class="grid-2x2">
+            <a href="#" class="btn">📚 Chapter Notes</a>
+            <a href="#" class="btn">📝 Chapter PYQs</a>
+            <a href="#" class="btn">🔥 Imp Reactions</a>
+            <a href="#" class="btn">💎 Core Concepts</a>
+        </div>
+    </div>
+
+    <!-- BIOLOGY CORE -->
+    <div class="card">
+        <h2 class="section-title" style="color: #4ade80;">🌿 Biology Core</h2>
+        <div class="grid-2x2">
+            <a href="#" class="btn">📚 Chapter Notes</a>
+            <a href="#" class="btn">📝 Chapter PYQs</a>
+            <a href="#" class="btn">🎯 Short Notes</a>
+            <a href="#" class="btn">🧬 Imp Diagrams</a>
+        </div>
+    </div>
+
+    <!-- REFERENCE LIBRARY -->
+    <div class="card">
+        <h2 class="section-title" style="color: #c084fc;">📖 Reference Library & Modules</h2>
+        <p style="color: #94a3b8; font-size: 0.8rem; margin: 5px 0 15px 0;">Allen, Akash, aur premium reference books ke premium modules direct access karein.</p>
+        <div class="grid-2x2" style="grid-template-columns: 1fr 1fr;">
+            <a href="#" class="btn" style="background: #2563eb;">🏢 Institute Modules</a>
+            <a href="#" class="btn" style="background: #2563eb;">📕 Reference Books</a>
+        </div>
+    </div>
+
+    <!-- GROUP 1: NOTES & MATERIAL CHAT -->
+    <div class="card" style="border: 1px solid #25D366; background: rgba(37, 211, 102, 0.03);">
+        <h2 class="section-title" style="color: #25D366; font-size: 1.3rem;">🗂️ Realtime Student Chat (Notes)</h2>
+        <p style="color: #a7f3d0; font-size: 0.8rem; margin: 5px 0 15px 0;">WhatsApp Group ki tarah bina kisi login ke premium notes aur study material mangwayein!</p>
+        <a href="https://chat.whatsapp.com/JORboxhbf3LL0sx6eHw8JB?mode=ac_t" target="_blank" class="chat-btn" style="background: linear-gradient(135deg, #25D366, #128C7E); box-shadow: 0 4px 12px rgba(37, 211, 102, 0.2);">
+            ⚡ Open Notes Room (No Login Required)
+        </a>
+    </div>
+
+    <!-- GROUP 2: DOUBT & DISCUSSION CHAT -->
+    <div class="card" style="border: 1px solid #3b82f6; background: rgba(59, 130, 246, 0.03);">
+        <h2 class="section-title" style="color: #38bdf8; font-size: 1.3rem;">💬 Realtime Student Chat (Doubts)</h2>
+        <p style="color: #93c5fd; font-size: 0.8rem; margin: 5px 0 15px 0;">Apne saare doubts discuss karein aur baaki NEET aspirants se instant help payein!</p>
+        <a href="https://chat.whatsapp.com/EtrXE1CSa3lFc7xnmDRBVt?mode=ac_t" target="_blank" class="chat-btn" style="background: linear-gradient(135deg, #3b82f6, #1d4ed8); box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);">
+            ⚡ Open Doubt Room (No Login Required)
+        </a>
+    </div>
+
+    <!-- COMMUNITY GUIDELINES -->
+    <div class="card">
+        <h2 class="section-title" style="color: #38bdf8; font-size: 1.2rem;">📋 Community Guidelines</h2>
+        <ul style="padding-left: 20px; margin: 10px 0 0 0; color: #cbd5e1; font-size: 0.8rem; line-height: 1.5;">
+            <li style="margin-bottom: 8px;">📌 Saare material <b>*Google Drive Sync*</b> hain, yani jab bhi Naksh sir naye notes daalenge, bina website update kiye aapko yahan mil jayenge.</li>
+            <li style="margin-bottom: 8px;">📌 Chat room/groups mein koi bhi student bakwaas ya irrelevant baatein na kare, block kar diya jayega.</li>
+            <li>📌 Kisi bhi module ki demand ke liye directly WhatsApp Discussion portal par post karein.</li>
+        </ul>
+    </div>
+
+    <!-- SERVER SUPPORT -->
+    <div class="card" style="border: 1px solid #f59e0b; text-align: center;">
+        <h2 style="color: #f59e0b; margin: 0 0 10px 0; font-size: 1.2rem;">💰 Server & Maintenance Support</h2>
+        <p style="color: #cbd5e1; font-size: 0.8rem; margin-bottom: 15px;">If this website helps you in your NEET prep, consider supporting our platform to keep server free from ads! 🙏✨</p>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=upi://pay?pa=naksh9@ptaxis" alt="QR Code" style="border-radius: 10px; background: white; padding: 5px; margin-bottom: 10px; width: 140px;">
+        <p style="color: #ef4444; font-family: monospace; font-size: 0.9rem; margin: 5px 0 0 0;">Official UPI ID: naksh9@ptaxis</p>
+    </div>
+
+    <!-- FOOTER -->
+    <div style="text-align: center; color: #64748b; font-size: 0.75rem; padding: 10px 0 30px 0;">
+        © 2026 Future Doctors Hub. All Rights Reserved.<br>
+        Curated with ❤️ by Team Naksh Chaudhary
+    </div>
+
 </div>
 
-<!-- COMMUNITY GUIDELINES SECTION -->
-<div class="card" style="background: #1e293b; padding: 20px; border-radius: 15px; margin-bottom: 20px;">
-    <div style="display: flex; align-items: center; margin-bottom: 15px;">
-        <span style="font-size: 1.5rem; margin-right: 10px;">📋</span>
-        <h2 style="color: #38bdf8; margin: 0; font-size: 1.4rem;">Community Guidelines</h2>
-    </div>
-    <ul style="list-style: none; padding: 0; margin: 0;">
-        <li style="color: #cbd5e1; font-size: 0.85rem; margin-bottom: 12px; line-height: 1.5; display: flex; align-items: flex-start;">
-            <span style="margin-right: 8px;">📌</span>
-            <span>Saare material <strong>*Google Drive Sync*</strong> hain, yani jab bhi Naksh sir naye notes daalenge, bina website update kiye aapko yahan mil jayenge.</span>
-        </li>
-        <li style="color: #cbd5e1; font-size: 0.85rem; margin-bottom: 12px; line-height: 1.5; display: flex; align-items: flex-start;">
-            <span style="margin-right: 8px;">📌</span>
-            <span>Chat room/groups mein koi bhi student bakwaas ya irrelevant baatein na kare, block kar diya jayega.</span>
-        </li>
-        <li style="color: #cbd5e1; font-size: 0.85rem; margin-bottom: 0; line-height: 1.5; display: flex; align-items: flex-start;">
-            <span style="margin-right: 8px;">📌</span>
-            <span>Kisi bhi module ki demand ke liye directly WhatsApp Discussion portal par post karein.</span>
-        </li>
-    </ul>
-</div>
+</body>
+        </html>
+            
