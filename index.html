@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Future Doctors Hub | Premium Portal</title>
+    <!-- Ultra Premium Fonts Pairing -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
     <style>
         * {
@@ -115,15 +116,18 @@
             font-weight: 900;
             border: 2px solid #020617;
         }
+
+        /* STYLISH ROYAL GOLD GRADIENT TEXT BACK */
         .royal-gold-text {
-            font-size: 1.8rem;
+            font-size: 1.95rem;
             font-weight: 900;
-            letter-spacing: 0.5px;
-            margin: 4px 0 16px 0;
-            background: linear-gradient(135deg, #ffffff 0%, #38bdf8 60%, #1d4ed8 100%);
+            letter-spacing: 0.8px;
+            margin: 6px 0 16px 0;
+            background: linear-gradient(135deg, #ffe066 0%, #f59e0b 50%, #b45309 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             text-transform: uppercase;
+            text-shadow: 0 2px 10px rgba(245, 158, 11, 0.2);
         }
 
         /* PLATFORM CORE METRICS COUNTERS */
@@ -231,7 +235,7 @@
             border-radius: 8px;
         }
 
-        /* HIGH VISIBILITY DONATION QR FRAME */
+        /* HIGH VISIBILITY DONATION QR FRAME CRITICAL FIX */
         .donation-box {
             background: linear-gradient(135deg, #030712 0%, #0b1536 100%);
             border: 1px solid rgba(56, 189, 248, 0.25);
@@ -239,16 +243,16 @@
         }
         .qr-frame-wrapper {
             background: #ffffff;
-            padding: 16px;
+            padding: 14px;
             border-radius: 20px;
             display: inline-block;
             margin: 18px auto;
-            box-shadow: 0 0 30px rgba(56, 189, 248, 0.3);
-            border: 3px solid #38bdf8;
+            box-shadow: 0 0 30px rgba(56, 189, 248, 0.4);
+            border: 3px solid #f59e0b; /* Gold Tint border for premium look */
         }
         .qr-img {
-            width: 170px;
-            height: 170px;
+            width: 180px;
+            height: 180px;
             display: block;
             object-fit: contain;
         }
@@ -275,7 +279,7 @@
         }
         .info-tile {
             background: rgba(11, 22, 54, 0.8);
-            border: 1px solid rgba(56, 189, 248, 0.25);
+            border: 1px solid rgba(245, 158, 11, 0.3); /* Gold border highlight */
             border-radius: 16px;
             padding: 16px;
             text-decoration: none;
@@ -286,7 +290,7 @@
         .info-tile-title {
             font-size: 0.95rem;
             font-weight: 800;
-            color: #38bdf8;
+            color: #f59e0b; /* Distinct Gold Color for Utility Headings */
             margin-bottom: 4px;
             display: flex;
             align-items: center;
@@ -319,32 +323,36 @@
             font-weight: 600;
         }
 
-        /* FLOATING INSTANT DOUBT INTERCEPTOR WIDGET (GREEN NEON) */
+        /* PRIORITY OVERLAY FLOATING GREEN INSTANT WIDGET */
         .emergency-doubt-trigger {
             position: fixed;
             bottom: 24px;
-            right: 16px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: calc(100% - 32px);
+            max-width: 448px;
             background: #22c55e;
             color: #ffffff;
-            padding: 14px 22px;
-            border-radius: 50px;
-            box-shadow: 0 10px 35px rgba(34, 197, 94, 0.5);
+            padding: 16px 20px;
+            border-radius: 18px;
+            box-shadow: 0 12px 40px rgba(34, 197, 94, 0.6);
             text-decoration: none;
             font-weight: 900;
-            font-size: 0.85rem;
+            font-size: 0.95rem;
             display: flex;
             align-items: center;
-            gap: 8px;
-            z-index: 999999;
+            justify-content: center;
+            gap: 10px;
+            z-index: 999999 !important; /* Top priority layover layer */
             text-transform: uppercase;
-            letter-spacing: 0.5px;
-            border: 2px solid rgba(255,255,255,0.3);
-            animation: pulseWidget 2.2s infinite ease-in-out;
+            letter-spacing: 0.8px;
+            border: 2px solid rgba(255,255,255,0.4);
+            animation: pulseWidget 2.5s infinite ease-in-out;
         }
         @keyframes pulseWidget {
-            0% { transform: scale(1); box-shadow: 0 10px 35px rgba(34, 197, 94, 0.5); }
-            50% { transform: scale(1.06); box-shadow: 0 10px 40px rgba(34, 197, 94, 0.7); }
-            100% { transform: scale(1); box-shadow: 0 10px 35px rgba(34, 197, 94, 0.5); }
+            0% { transform: translateX(-50%) scale(1); box-shadow: 0 12px 40px rgba(34, 197, 94, 0.6); }
+            50% { transform: translateX(-50%) scale(1.03); box-shadow: 0 15px 45px rgba(34, 197, 94, 0.8); }
+            100% { transform: translateX(-50%) scale(1); box-shadow: 0 12px 40px rgba(34, 197, 94, 0.6); }
         }
     </style>
 </head>
@@ -352,11 +360,13 @@
 
 <div class="container">
 
+    <!-- SUPREME HEADER ARCHITECTURE -->
     <div class="premium-header">
         <div class="brand-logo-text">⚡ FD HUB SYSTEM</div>
         <div class="brand-subtitle">The Medical Aspirants Ecosystem</div>
     </div>
 
+    <!-- MAIN BRAND CARD WITH ROYAL GOLD TEXT RESTORED -->
     <div class="mega-card hero-block">
         <h2 style="color: #38bdf8; margin: 0; font-size: 1.6rem; letter-spacing: 0.5px; font-weight: 900;">🩺 FUTURE DOCTORS</h2>
         <div class="avatar-frame">
@@ -364,23 +374,30 @@
             <div class="verified-badge">✓</div>
         </div>
         <p style="color: #94a3b8; font-weight: 800; margin-bottom: 2px; font-size: 0.95rem; letter-spacing: 0.5px;">🏆 Founder & Mentor</p>
+        
+        <!-- STYLISH STRIKING GOLD OWNER TEXT -->
         <div class="royal-gold-text">Naksh Chaudhary</div>
+        
         <span style="background: rgba(56, 189, 248, 0.15); color: #38bdf8; padding: 6px 16px; border-radius: 20px; font-size: 0.75rem; font-weight: 800; border: 1px solid rgba(56,189,248,0.35);">✨ Mission NEET 2027/2028 ✨</span>
     </div>
 
+    <!-- PLATFORM METRICS -->
     <div class="metrics-row">
         <div class="metric-card"><span class="metric-num">500+</span><span class="metric-name">📚 Premium Notes</span></div>
         <div class="metric-card"><span class="metric-num">1000+</span><span class="metric-name">📝 Chapter PYQs</span></div>
         <div class="metric-card"><span class="metric-num">5000+</span><span class="metric-name">👨‍⚕️ Aspirants Trust</span></div>
     </div>
 
+    <!-- ALERT BANNER -->
     <div class="rotating-banner" id="bannerRotator">
         **🩺 Aaj ki mehnat, kal naam ke aage "Dr." likhegi. 🔥**
     </div>
 
+    <!-- MAIN SYSTEM MATERIAL VAULT (UNIFORM BLUE BOXES) -->
     <div class="mega-card">
         <div class="section-headline" style="color: #38bdf8;">📂 THE CORE NOTES VAULT</div>
         
+        <!-- PHYSICS -->
         <div class="subject-segment-headline">⚡ Physics Booster</div>
         <div class="resource-grid" style="margin-bottom: 22px;">
             <a href="https://drive.google.com/drive/folders/1kRTvvUrbj9_5rwcYh3fsTxF66iH1Lz1I" target="_blank" class="resource-btn premium-blue-box"><span>📚</span> Chapter Notes</a>
@@ -389,6 +406,7 @@
             <a href="https://drive.google.com/drive/folders/1kRTvvUrbj9_5rwcYh3fsTxF66iH1Lz1I" target="_blank" class="resource-btn premium-blue-box"><span>⚙️</span> Derivations</a>
         </div>
 
+        <!-- CHEMISTRY -->
         <div class="subject-segment-headline">🧪 Chemistry Magic</div>
         <div class="resource-grid" style="margin-bottom: 22px;">
             <a href="https://drive.google.com/drive/folders/1NrYRFaTj9SZGj_evJgxt1nvT6ggYKGsh" target="_blank" class="resource-btn premium-blue-box"><span>📚</span> Chapter Notes</a>
@@ -397,6 +415,7 @@
             <a href="https://drive.google.com/drive/folders/1NrYRFaTj9SZGj_evJgxt1nvT6ggYKGsh" target="_blank" class="resource-btn premium-blue-box"><span>💎</span> Core Concepts</a>
         </div>
 
+        <!-- BIOLOGY -->
         <div class="subject-segment-headline">🌿 Biology Core</div>
         <div class="resource-grid" style="margin-bottom: 22px;">
             <a href="https://drive.google.com/drive/folders/1sdaXLic_wnOs2BsfcgaJwT4CaQK6RTiO" target="_blank" class="resource-btn premium-blue-box"><span>📚</span> Chapter Notes</a>
@@ -405,6 +424,7 @@
             <a href="https://drive.google.com/drive/folders/1sdaXLic_wnOs2BsfcgaJwT4CaQK6RTiO" target="_blank" class="resource-btn premium-blue-box"><span>🧬</span> Imp Diagrams</a>
         </div>
 
+        <!-- MODULES -->
         <div class="subject-segment-headline">📖 Premium Reference Modules</div>
         <p style="color: #64748b; font-size: 0.8rem; margin-bottom: 12px; font-weight:600; padding-left:2px;">Allen, Akash, aur standard coaching modules completely synced.</p>
         <div class="resource-grid">
@@ -413,22 +433,19 @@
         </div>
     </div>
 
+    <!-- MOTIVATION SYSTEM RACK -->
     <div class="mega-card">
         <div class="section-headline" style="color: #38bdf8;">🔥 INFINITE RANKERS MOTIVATION</div>
         <div class="live-motivation-scroller">
             <div class="quote-item-row">✨ Syllabus bada hai toh kya hua, tumhara hosla bhi toh chota nahi hai! 🩺🔥</div>
             <div class="quote-item-row">✨ NCERT ki ek ek line tumhare selection ka rasta tay karegi. 📚🎯</div>
-            <div class="quote-item-row">✨ Jab log raat ko so rahe honge, tab tumhari mehnat itihaas likh rahi hogi. 🌌✍️</div>
+            <div class="quote-item-row">✨ Jab log raat ko so rahe honge, tab tumhari mehnat itihaas likh rahi hoga. 🌌✍️</div>
             <div class="quote-item-row">✨ White coat aise hi nahi milti, uske liye din raat jalna padta hai. 🔬🩺</div>
             <div class="quote-item-row">✨ AIIMS Delhi ki deewarein tumhara intezaar kar rahi hain, ruke mat raho! 🏢💪</div>
-            <div class="quote-item-row">✨ Drop lena kamzori nahi, ek aur mauka hai unko galat saabit karne ka! 🔥🧠</div>
-            <div class="quote-item-row">✨ Stethoscope ka vazan vahi utha sakta hai jo aaj kitabon ka bojh uthayega. 🩺🎒</div>
-            <div class="quote-item-row">✨ NEET tumhari qismat nahi, tumhari mehnat ke dum par chalne wala exam hai. 💯🔥</div>
-            <div class="quote-item-row">✨ Ghar walo ki aankhon ke aansu khushi me badalna tumhara farz hai. ❤️👨‍⚕️</div>
-            <div class="quote-item-row">✨ Jo log tum par shak karte hain, unhe apne result se jawab do. 📇🧠</div>
         </div>
     </div>
 
+    <!-- WHATSAPP GROUP 1 -->
     <div class="mega-card">
         <div class="section-headline" style="color: #38bdf8;">🗂️ NOTES & MATERIAL ECOSYSTEM</div>
         <a href="https://chat.whatsapp.com/JORboxhbf3LL0sx6eHw8JB?mode=ac_t" target="_blank" class="community-card">
@@ -437,6 +454,7 @@
         </a>
     </div>
 
+    <!-- WHATSAPP GROUP 2 -->
     <div class="mega-card">
         <div class="section-headline" style="color: #38bdf8;">💬 DOUBT RESOLUTION ARENA</div>
         <a href="https://chat.whatsapp.com/EtrXE1CSa3lFc7xnmDRBVt?mode=ac_t" target="_blank" class="community-card">
@@ -445,6 +463,7 @@
         </a>
     </div>
 
+    <!-- FIXED HIGH-VISIBILITY QR FRAME WITH EXACT IMAGE VALUE -->
     <div class="mega-card donation-box">
         <div class="section-headline" style="color: #38bdf8; border-bottom: 2px solid rgba(56, 189, 248, 0.2); justify-content: center;">💝 SUPPORT OUR MISSION</div>
         <p style="color: #cbd5e1; font-size: 0.85rem; font-weight: 500;">Server aur domain maintain karne ke liye aapki choti si help bhi humein continuous free content dene me madad karegi.</p>
@@ -460,16 +479,7 @@
         </div>
     </div>
 
+    <!-- UTILITIES TILES (SABSE NICHE WITH INTEGRATED GMAIL & EXTENDED ABOUT POPUP) -->
     <div class="info-grid">
         <a href="#about" id="aboutTrigger" class="info-tile">
-            <div class="info-tile-title">ℹ️ About Us</div>
-            <div class="info-tile-desc">Know our vision and system targets for medical edge.</div>
-        </a>
-        <a href="mailto:support@fdhub.com" class="info-tile">
-            <div class="info-tile-title">📩 Contact Us</div>
-            <div class="info-tile-desc">Facing errors? Connect instantly with admin support.</div>
-        </a>
-    </div>
-
-    <div style="text-align: center; color: #475569; font-size: 0.78rem; padding: 10px 0 10px 0;">
-        © 2026 Future Doctors
+     
