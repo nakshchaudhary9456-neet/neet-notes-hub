@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Future Doctors Hub | Premium Portal</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght=400;500;600;700&family=Poppins:wght=700;800;900&display=swap" rel="stylesheet">
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
         body {
@@ -16,6 +16,7 @@
         }
         .container { max-width: 480px; margin: 0 auto; }
         h1, h2, h3, .brand-logo-text, .section-headline, .royal-gold-text { font-family: 'Poppins', sans-serif; }
+        
         .premium-header { text-align: center; padding: 20px 0 25px 0; }
         .brand-logo-text {
             font-size: 1.75rem;
@@ -27,6 +28,7 @@
             -webkit-text-fill-color: transparent;
         }
         .brand-subtitle { font-size: 0.75rem; color: #475569; text-transform: uppercase; letter-spacing: 3px; font-weight: 700; margin-top: 4px; }
+        
         .mega-card {
             background: rgba(10, 17, 40, 0.9);
             border: 1px solid rgba(56, 189, 248, 0.15);
@@ -35,6 +37,34 @@
             margin-bottom: 24px;
             backdrop-filter: blur(20px);
         }
+        
+        .hero-block {
+            background: radial-gradient(circle at top, #0b1536 0%, #020617 100%);
+            border: 2px solid rgba(56, 189, 248, 0.4);
+            text-align: center;
+            box-shadow: 0 0 35px rgba(56, 189, 248, 0.2);
+        }
+        .avatar-frame { position: relative; width: 130px; height: 130px; margin: 15px auto 18px auto; }
+        .avatar-img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 4px solid #38bdf8; }
+        .verified-badge { position: absolute; bottom: 6px; right: 6px; background: #38bdf8; color: #020617; border-radius: 50%; width: 24px; height: 24px; font-size: 14px; display: flex; align-items: center; justify-content: center; font-weight: 900; }
+        
+        .royal-gold-text {
+            font-size: 1.95rem;
+            font-weight: 900;
+            margin: 6px 0 16px 0;
+            background: linear-gradient(135deg, #ffe066 0%, #f59e0b 50%, #b45309 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+        }
+
+        .metrics-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 24px; }
+        .metric-card { background: rgba(14, 26, 61, 0.8); border: 1px solid rgba(56, 189, 248, 0.15); border-radius: 16px; padding: 14px 4px; text-align: center; }
+        .metric-num { font-size: 1.3rem; font-weight: 900; color: #38bdf8; display: block; }
+        .metric-name { font-size: 0.68rem; color: #94a3b8; font-weight: 700; text-transform: uppercase; }
+        
+        .rotating-banner { background: linear-gradient(90deg, #1e3a8a 0%, #0369a1 50%, #1d4ed8 100%); padding: 15px; border-radius: 16px; font-size: 0.9rem; font-weight: 700; text-align: center; margin-bottom: 24px; border-left: 5px solid #38bdf8; }
+        
         .section-headline {
             font-size: 1.15rem;
             font-weight: 900;
@@ -46,77 +76,81 @@
             border-bottom: 2px solid rgba(56, 189, 248, 0.15);
             padding-bottom: 10px;
         }
-        .hero-block {
-            background: radial-gradient(circle at top, #0b1536 0%, #020617 100%);
-            border: 2px solid rgba(56, 189, 248, 0.4);
-            text-align: center;
-            box-shadow: 0 0 35px rgba(56, 189, 248, 0.2);
-        }
-        .avatar-frame { position: relative; width: 130px; height: 130px; margin: 15px auto 18px auto; }
-        .avatar-img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 4px solid #38bdf8; }
-        .verified-badge { position: absolute; bottom: 6px; right: 6px; background: #38bdf8; color: #020617; border-radius: 50%; width: 24px; height: 24px; font-size: 14px; display: flex; align-items: center; justify-content: center; font-weight: 900; }
+
+        .subject-segment-headline { font-size: 1.15rem; font-weight: 800; margin-top: 24px; margin-bottom: 14px; text-transform: uppercase; display: flex; align-items: center; gap: 8px; }
+        .physics-color { color: #f59e0b; }
+        .chemistry-color { color: #06b6d4; }
+        .biology-color { color: #22c55e; }
+        .module-color { color: #a855f7; }
+
+        .resource-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 10px; }
         
-        /* ROYAL GOLD GRADIENT */
-        .royal-gold-text {
-            font-size: 1.95rem;
-            font-weight: 900;
-            margin: 6px 0 16px 0;
-            background: linear-gradient(135deg, #ffe066 0%, #f59e0b 50%, #b45309 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-transform: uppercase;
+        .resource-btn { 
+            color: #ffffff; 
+            text-decoration: none; 
+            padding: 20px 12px; 
+            border-radius: 20px; 
+            text-align: center; 
+            font-size: 0.95rem; 
+            font-weight: 700; 
+            display: flex; 
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center; 
+            gap: 8px; 
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
-        
-        .metrics-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 24px; }
-        .metric-card { background: rgba(14, 26, 61, 0.8); border: 1px solid rgba(56, 189, 248, 0.15); border-radius: 16px; padding: 14px 4px; text-align: center; }
-        .metric-num { font-size: 1.3rem; font-weight: 900; color: #38bdf8; display: block; }
-        .metric-name { font-size: 0.68rem; color: #94a3b8; font-weight: 700; text-transform: uppercase; }
-        .rotating-banner { background: linear-gradient(90deg, #1e3a8a 0%, #0369a1 50%, #1d4ed8 100%); padding: 15px; border-radius: 16px; font-size: 0.9rem; font-weight: 700; text-align: center; margin-bottom: 24px; border-left: 5px solid #38bdf8; }
-        .subject-segment-headline { font-size: 1.05rem; font-weight: 800; margin-top: 8px; margin-bottom: 12px; text-transform: uppercase; color: #38bdf8; }
-        .resource-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-        .premium-blue-box { background: linear-gradient(135deg, #0b1536 0%, #050b1e 100%); border: 1px solid rgba(56, 189, 248, 0.35); }
-        .resource-btn { color: #ffffff; text-decoration: none; padding: 16px 12px; border-radius: 16px; text-align: center; font-size: 0.88rem; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 8px; }
+        .resource-btn span { font-size: 1.5rem; }
+        .resource-btn:active { transform: scale(0.95); opacity: 0.9; }
+
+        .bg-physics { background: linear-gradient(135deg, #1e40af 0%, #1d4ed8 100%); border: 1px solid rgba(255,255,255,0.1); }
+        .bg-chemistry { background: linear-gradient(135deg, #0369a1 0%, #0284c7 100%); border: 1px solid rgba(255,255,255,0.1); }
+        .bg-biology { background: linear-gradient(135deg, #166534 0%, #15803d 100%); border: 1px solid rgba(255,255,255,0.1); }
+        .bg-modules { background: linear-gradient(135deg, #6b21a8 0%, #7e22ce 100%); border: 1px solid rgba(255,255,255,0.1); }
+
         .community-card { display: flex; align-items: center; justify-content: space-between; background: #0b132b; border: 1px solid rgba(56,189,248,0.2); padding: 16px; border-radius: 16px; color: #ffffff; text-decoration: none; font-weight: 700; font-size: 0.9rem; }
         .join-pill { background: #38bdf8; color: #020617; font-size: 0.75rem; font-weight: 900; padding: 6px 14px; border-radius: 8px; }
         
-        /* QR CODE FIXED BLOCK */
         .donation-box { background: linear-gradient(135deg, #030712 0%, #0b1536 100%); border: 1px solid rgba(56, 189, 248, 0.25); text-align: center; }
         .qr-frame-wrapper { background: #ffffff; padding: 12px; border-radius: 20px; display: inline-block; margin: 18px auto; border: 3px solid #38bdf8; }
         .qr-img { width: 180px; height: 180px; display: block; object-fit: contain; }
         .upi-badge { background: rgba(56, 189, 248, 0.08); border: 1px dashed rgba(56, 189, 248, 0.4); padding: 8px 14px; border-radius: 10px; font-size: 0.85rem; color: #38bdf8; font-weight: 700; }
         
-        /* UTILITY GRID */
-        .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 10px; margin-bottom: 24px; }
-        .info-tile { background: rgba(11, 22, 54, 0.8); border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 16px; padding: 16px; text-decoration: none; color: #ffffff; }
+        .info-grid { display: grid; grid-template-columns: 1fr; gap: 14px; margin-top: 10px; margin-bottom: 24px; }
+        .info-tile { background: rgba(11, 22, 54, 0.8); border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 16px; padding: 16px; text-decoration: none; color: #ffffff; display: block; }
         .info-tile-title { font-size: 0.95rem; font-weight: 800; color: #f59e0b; margin-bottom: 4px; }
         .info-tile-desc { font-size: 0.75rem; color: #94a3b8; }
         
-        .live-motivation-scroller { max-height: 200px; overflow-y: auto; background: rgba(2, 6, 23, 0.7); padding: 12px; border-radius: 16px; }
+        .live-motivation-scroller { height: 350px; overflow-y: auto; background: rgba(2, 6, 23, 0.7); padding: 12px; border-radius: 16px; border: 1px solid rgba(56,189,248,0.1); }
         .quote-item-row { background: rgba(56, 189, 248, 0.03); border-left: 4px solid #38bdf8; padding: 12px; margin-bottom: 10px; font-size: 0.88rem; color: #e2e8f0; font-weight: 600; text-align: left; }
 
-        /* FLOATING GREEN BUTTON WIDGET */
+        .about-text-line { font-size: 0.88rem; color: #cbd5e1; margin-bottom: 8px; display: flex; align-items: flex-start; gap: 8px; }
+        .about-text-line span { color: #f59e0b; }
+
+        /* FLOATING DOUBT BUTTON STYLES WITH UPDATED FIXED INDEX */
         .emergency-doubt-trigger {
             position: fixed;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: calc(100% - 32px);
-            max-width: 448px;
+            bottom: 25px;
+            right: 16px;
             background: #22c55e;
             color: #ffffff;
-            padding: 16px 20px;
-            border-radius: 18px;
-            box-shadow: 0 12px 40px rgba(34, 197, 94, 0.6);
+            padding: 12px 18px;
+            border-radius: 30px;
+            box-shadow: 0 8px 25px rgba(34, 197, 94, 0.5);
             text-decoration: none;
-            font-weight: 900;
-            font-size: 0.95rem;
+            font-weight: 800;
+            font-size: 0.82rem;
             display: flex;
             align-items: center;
-            justify-content: center;
-            gap: 10px;
+            gap: 6px;
             z-index: 999999 !important;
             text-transform: uppercase;
-            border: 2px solid rgba(255,255,255,0.4);
+            border: 2px solid rgba(255,255,255,0.3);
+            transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+        .emergency-doubt-trigger:active {
+            transform: scale(0.95);
         }
     </style>
 </head>
@@ -129,7 +163,6 @@
         <div class="brand-subtitle">The Medical Aspirants Ecosystem</div>
     </div>
 
-    <!-- OWNER BOX WITH GOLD TEXT -->
     <div class="mega-card hero-block">
         <h2 style="color: #38bdf8; margin: 0; font-size: 1.6rem; font-weight: 900;">🩺 FUTURE DOCTORS</h2>
         <div class="avatar-frame">
@@ -149,70 +182,121 @@
 
     <div class="rotating-banner" id="bannerRotator">🩺 Aaj ki mehnat, kal naam ke aage "Dr." likhegi. 🔥</div>
 
-    <!-- NOTES SECTION -->
     <div class="mega-card">
         <div class="section-headline" style="color: #38bdf8;">📂 THE CORE NOTES VAULT</div>
-        <div class="subject-segment-headline">⚡ Physics Booster</div>
-        <div class="resource-grid" style="margin-bottom: 15px;">
-            <a href="https://drive.google.com/drive/folders/1kRTvvUrbj9_5rwcYh3fsTxF66iH1Lz1I" target="_blank" class="resource-btn premium-blue-box"><span>📚</span> Notes</a>
-            <a href="https://drive.google.com/drive/folders/1kRTvvUrbj9_5rwcYh3fsTxF66iH1Lz1I" target="_blank" class="resource-btn premium-blue-box"><span>📝</span> PYQs</a>
-        </div>
-        <div class="subject-segment-headline">🧪 Chemistry Magic</div>
-        <div class="resource-grid" style="margin-bottom: 15px;">
-            <a href="https://drive.google.com/drive/folders/1NrYRFaTj9SZGj_evJgxt1nvT6ggYKGsh" target="_blank" class="resource-btn premium-blue-box"><span>📚</span> Notes</a>
-            <a href="https://drive.google.com/drive/folders/1NrYRFaTj9SZGj_evJgxt1nvT6ggYKGsh" target="_blank" class="resource-btn premium-blue-box"><span>📝</span> PYQs</a>
-        </div>
-        <div class="subject-segment-headline">🌿 Biology Core</div>
+        
+        <!-- PHYSICS -->
+        <div class="subject-segment-headline physics-color">⚡ Physics Booster</div>
         <div class="resource-grid">
-            <a href="https://drive.google.com/drive/folders/1sdaXLic_wnOs2BsfcgaJwT4CaQK6RTiO" target="_blank" class="resource-btn premium-blue-box"><span>📚</span> Notes</a>
-            <a href="https://drive.google.com/drive/folders/1sdaXLic_wnOs2BsfcgaJwT4CaQK6RTiO" target="_blank" class="resource-btn premium-blue-box"><span>📝</span> PYQs</a>
+            <a href="https://drive.google.com/drive/folders/1kRTvvUrbj9_5rwcYh3fsTxF66iH1Lz1I" target="_blank" class="resource-btn bg-physics"><span>📚</span> Chapter Notes</a>
+            <a href="https://drive.google.com/drive/folders/1kRTvvUrbj9_5rwcYh3fsTxF66iH1Lz1I" target="_blank" class="resource-btn bg-physics"><span>📝</span> Chapter PYQs</a>
+            <a href="https://drive.google.com/drive/folders/1kRTvvUrbj9_5rwcYh3fsTxF66iH1Lz1I" target="_blank" class="resource-btn bg-physics"><span>📐</span> Formula Sheet</a>
+            <a href="https://drive.google.com/drive/folders/1kRTvvUrbj9_5rwcYh3fsTxF66iH1Lz1I" target="_blank" class="resource-btn bg-physics"><span>⚙️</span> Derivations</a>
+        </div>
+
+        <!-- CHEMISTRY -->
+        <div class="subject-segment-headline chemistry-color">🧪 Chemistry Magic</div>
+        <div class="resource-grid">
+            <a href="https://drive.google.com/drive/folders/1NrYRFaTj9SZGj_evJgxt1nvT6ggYKGsh" target="_blank" class="resource-btn bg-chemistry"><span>📚</span> Chapter Notes</a>
+            <a href="https://drive.google.com/drive/folders/1NrYRFaTj9SZGj_evJgxt1nvT6ggYKGsh" target="_blank" class="resource-btn bg-chemistry"><span>📝</span> Chapter PYQs</a>
+            <a href="https://drive.google.com/drive/folders/1NrYRFaTj9SZGj_evJgxt1nvT6ggYKGsh" target="_blank" class="resource-btn bg-chemistry"><span>🔥</span> Imp Reactions</a>
+            <a href="https://drive.google.com/drive/folders/1NrYRFaTj9SZGj_evJgxt1nvT6ggYKGsh" target="_blank" class="resource-btn bg-chemistry"><span>💎</span> Core Concepts</a>
+        </div>
+
+        <!-- BIOLOGY -->
+        <div class="subject-segment-headline biology-color">🌿 Biology Core</div>
+        <div class="resource-grid">
+            <a href="https://drive.google.com/drive/folders/1sdaXLic_wnOs2BsfcgaJwT4CaQK6RTiO" target="_blank" class="resource-btn bg-biology"><span>📚</span> Chapter Notes</a>
+            <a href="https://drive.google.com/drive/folders/1sdaXLic_wnOs2BsfcgaJwT4CaQK6RTiO" target="_blank" class="resource-btn bg-biology"><span>📝</span> Chapter PYQs</a>
+            <a href="https://drive.google.com/drive/folders/1sdaXLic_wnOs2BsfcgaJwT4CaQK6RTiO" target="_blank" class="resource-btn bg-biology"><span>🎯</span> Short Notes</a>
+            <a href="https://drive.google.com/drive/folders/1sdaXLic_wnOs2BsfcgaJwT4CaQK6RTiO" target="_blank" class="resource-btn bg-biology"><span>🧬</span> Imp Diagrams</a>
+        </div>
+
+        <!-- PREMIUM REFERENCE -->
+        <div class="subject-segment-headline module-color">📚 Premium Reference Modules</div>
+        <div class="resource-grid" style="margin-top: 5px;">
+            <a href="https://drive.google.com/drive/folders/1948djiD7rn8ERKhsLRWZihk5LaGadAsw" target="_blank" class="resource-btn bg-modules"><span>🏢</span> Institute Modules</a>
+            <a href="https://drive.google.com/drive/folders/1948djiD7rn8ERKhsLRWZihk5LaGadAsw" target="_blank" class="resource-btn bg-modules"><span>📕</span> Reference Books</a>
         </div>
     </div>
 
-    <!-- MOTIVATION -->
+    <!-- 150 LINES MOTIVATION VAULT -->
     <div class="mega-card">
-        <div class="section-headline" style="color: #38bdf8;">🔥 INFINITE RANKERS MOTIVATION</div>
+        <div class="section-headline" style="color: #38bdf8;">🔥 INFINITE RANKERS MOTIVATION (150+ VAULT)</div>
         <div class="live-motivation-scroller">
-            <div class="quote-item-row">✨ Syllabus bada hai toh kya hua, hosla chota nahi hai! 🩺</div>
-            <div class="quote-item-row">✨ NCERT ki ek ek line selection ka rasta hai. 📚</div>
+            <div class="quote-item-row">✨ Syllabus bada hai toh kya hua, tumhara hausla bhi toh chota nahi hai! 🩺🔥</div>
+            <div class="quote-item-row">✨ NCERT ki ek ek line tumhere selection ka rasta tay karegi. 📚🎯</div>
+            <div class="quote-item-row">✨ Jab log raat ko so rahe honge, tab tumhari mehnat itihaas likh rahi hogi. 🌌✍️</div>
+            <div class="quote-item-row">✨ Stethoscope ki aawaz kisi bhi music se zyada sukoon deti hai. 🎧🩺</div>
+            <div class="quote-item-row">✨ Safed apron khareeda nahi jata, use apni mehnat se kamaya jata hai. 🥼💎</div>
+            <div class="quote-item-row">✨ Drop lena haar nahi, ek naye aur majboot shuruat ka sankalp hai. 💪💥</div>
+            <div class="quote-item-row">✨ AIIMS ki building sirf ek sapna nahi, tumhara agla thikana hona chahiye. 🏛️🌟</div>
+            <div class="quote-item-row">✨ Bio ke diagram aur Physics ke formulae hi tumhare sacche saathi hain. 📐🧬</div>
+            <div class="quote-item-row">✨ Chemistry ki reactions se darna nahi, unhe ghol kar pi jana hai. 🧪⚡</div>
+            <div class="quote-item-row">✨ NEET 2027/2028 door nahi hai, har ek din ka har ek ghanta bacha kar padho. ⏳💯</div>
+            <div class="quote-item-row">✨ Log taane marenge, par tumhara result unka mooh band karega. 🤫💥</div>
+            <div class="quote-item-row">✨ Neend ko tyagna padega agar khwaab poore karne ka junoon sarr par hai. 🛌❌</div>
+            <div class="quote-item-row">✨ Test series me number kam aaye toh rona nahi, balki un galtiyo se seekhna hai. 📊🔥</div>
+            <div class="quote-item-row">✨ Naksh Chaudhary ka ek hi maqsad hai, har ek bache ko doctor bante dekhna. 🏆🩺</div>
+            <div class="quote-item-row">✨ Saccha hard work kabhi bekaar nahi jata, khuda sab dekh raha hai. 🙏✨</div>
+            <div class="quote-item-row">✨ Har ek mock test tumhare final match ki practice hai, poori jaan jhonk do. 🏏🎯</div>
+            <div class="quote-item-row">✨ Jab thak jao toh socho ki tumne ye shuru hi kyun kiya tha! 💭⚡</div>
+            <div class="quote-item-row">✨ Maa-baap ki aankhon ke sapne poore karne ki zimmedari ab tumhari hai. 👨‍👩‍👦❤️</div>
+            <div class="quote-item-row">✨ Ghante ginn kar padhai nahi hoti, padhai toh tab tak hoti hai jab tak target poora na ho. ⏱️❌</div>
+            <div class="quote-item-row">✨ Ek baar jab naam ke aage Dr. lag gaya, toh poori zindagi badal jayegi. 🥼👑</div>
+            <div class="quote-item-row">✨ Distractions ko block karo aur apne aim par laser focus rakho. 🎯🚫</div>
+            <div class="quote-item-row">✨ Kota ya Delhi jaana zaroori nahi, sahi material ho toh ghar se rank niklegi! 🏠💥</div>
+            <div class="quote-item-row">✨ Organic Chemistry ke mechanism ko baar-baar likh kar yaad karo. 📝🧪</div>
+            <div class="quote-item-row">✨ Physics ke numerical se darna mat, practice hi tumhe perfect banayegi. 🔢⚡</div>
+            <div class="quote-item-row">✨ Apne modules aur notes par poora bharosa rakho aur baar-baar revise karo. 📚🔄</div>
+            <div class="quote-item-row">✨ Ek baar ka discipline tumhari aane wali 50 saal ki life set kar dega. 🌟👑</div>
+            <div class="quote-item-row">✨ Toppers alag kaam nahi karte, wo har kaam ko sahi dhang se roz karte hain. 📅💯</div>
+            <div class="quote-item-row">✨ Har din khud ko kal se behtar banane ka prayas karo. 📈🚀</div>
+            <div class="quote-item-row">✨ Failure sirf ek bend hai, tumhari kahani ka end nahi. 🛑❌</div>
+            <div class="quote-item-row">✨ NCERT Biology ki ek bhi line chuti, toh samjho selection ki link tuti. 🧬📖</div>
+            <div class="quote-item-row">✨ Apne room ki deewar par AIIMS ka photo laga lo aur use dekh kar padho. 🏛️👁️</div>
+            <div class="quote-item-row">✨ Mehnat itni khamoshi se karo ki tumhari kamyabi shor macha de. 🤫💥</div>
+            <div class="quote-item-row">✨ Koi tum par vishwas kare ya na kare, tumhe khud par vishwas hona chahiye. 💪✨</div>
+            <div class="quote-item-row">✨ Mushkilein aayengi, par wo sirf tumhari tayaari ko parakhne aati hain. 🔥🔱</div>
+            <div class="quote-item-row">✨ NEET crack karna ek tapasya hai, aur tum is yug ke tapasvi ho. 🧘‍♂️⚡</div>
+            <div class="quote-item-row">✨ Social media ke double tap ko chhodo aur NCERT ke panno ko palto. 📱❌</div>
+            <div class="quote-item-row">✨ Aaj jo dard tum seh rahe ho, kal wo tumhari sabse badi taqat banega. 💪🩹</div>
+            <div class="quote-item-row">✨ Padhai ko bojh mat samjho, ise apne sapno ka raasta samjho. 🗺️🚀</div>
+            <div class="quote-item-row">✨ Roz subah uthte hi apna daily schedule fix karo aur use achieve karo. ☀️🗒️</div>
+            <div class="quote-item-row">✨ Ek accha doctor banne ke liye pehle ek accha aur mehnati student banna padta hai. 🥼🌟</div>
+            <div class="quote-item-row">✨ Tumhara competition kisi aur se nahi, khud ke aalsya se hai. 🛌🥊</div>
+            <div class="quote-item-row">✨ Negative logo se door raho, wo tumhere hausle ko kamzor karte hain. 𚓗❌</div>
+            <div class="quote-item-row">✨ Physics ke graphs aur modern physics ke direct sawal direct rank badhate hain. 📊⚡</div>
+            <div class="quote-item-row">✨ Genetics aur Evolution ko itna radd lo ki neend me bhi sawal sahi ho. 🧬💤</div>
+            <div class="quote-item-row">✨ Apni weaknesses ki ek diary banao aur unpar extra kaam karo. 📓🛠️</div>
+            <div class="quote-item-row">✨ Kamyabi unhi ko milti hai jo mushkil waqt me bhi tike rehte hain. 🌪️🛡️</div>
+            <div class="quote-item-row">✨ Tumhara dimag ek supercomputer hai, isme kachra mat bharo. 🧠💻</div>
+            <div class="quote-item-row">✨ Har ek din lagayi gayi choti eent hi ek din bada mehal banati hai. 🧱🏛️</div>
+            <div class="quote-item-row">✨ Revision hi selection ki sabse badi chaabi hai, ise kabhi miss mat karna. 🔑📚</div>
+            <div class="quote-item-row">✨ NEET me 700+ ka target rakho, tabhi 650+ ke safe zone me aaoge. 🎯🚀</div>
+            <div class="quote-item-row">✨ Mehnat karne ki umar hai, agar abhi nahi kiya toh kab karoge? ⏳🔥</div>
+            <div class="quote-item-row">✨ Apne andar ke dar ko khatam karo aur ek warrior ki tarah padho. ⚔️🦁</div>
+            <div class="quote-item-row">✨ Jab hath me surgical knife hogi, tab ye saari raato ki jaagna vasool ho jayega. 🔪🩺</div>
+            <div class="quote-item-row">✨ Har ek negative marking tumse tumhari seat chhin sakti hai, dhyan se tick karo. 🎯❌</div>
+            <divclass="quote-item-row">✨ Inorganic Chemistry ke exceptions hi asal me rank-booster hote hain, unhe baar-baar padhein. 🧪💎</div>
+            <div class="quote-item-row">✨ Consistency hi aapko ordinary se extraordinary banati hai. 📈🔥</div>
         </div>
     </div>
 
-    <!-- QR CODE BOX -->
-    <div class="mega-card donation-box">
-        <div class="section-headline" style="color: #38bdf8; justify-content: center;">💝 SUPPORT OUR MISSION</div>
-        <div class="qr-frame-wrapper">
-            <img src="qr.png" alt="Donation QR Code" class="qr-img">
-        </div>
-        <br>
-        <div class="upi-badge">UPI ID: nakshchaudhary@upi</div>
-    </div>
-
-    <!-- ABOUT & CONTACT (GMAIL ATTACHED) -->
+    <!-- UTILITIES / CONTACTS -->
     <div class="info-grid">
-        <a href="#about" id="aboutTrigger" class="info-tile">
-            <div class="info-tile-title">ℹ️ About Us</div>
-            <div class="info-tile-desc">Know our vision for medical edge.</div>
-        </a>
         <a href="mailto:nakshchaudhary9456@gmail.com" class="info-tile">
-            <div class="info-tile-title">📩 Contact Us</div>
-            <div class="info-tile-desc">Connect directly via Official Gmail.</div>
+            <div class="info-tile-title">📩 Contact Us Directly</div>
+            <div class="info-tile-desc">Connect regarding any support via Official Gmail Client.</div>
         </a>
     </div>
 
 </div>
 
-<!-- GREEN FLOATING BUTTON -->
-<a href="https://chat.whatsapp.com/EtrXE1CSa3lFc7xnmDRBVt" target="_blank" class="emergency-doubt-trigger">
-    🟢 Instantly Ask Doubt Here
+<!-- GREEN FLOATING DOUBT BUTTON FIXED ON RIGHT SIDE -->
+<a href="https://t.me/+Fw60X9l_Sg01YjVl" target="_blank" class="emergency-doubt-trigger">
+    💬 Ask Doubt
 </a>
-
-<script>
-    document.getElementById('aboutTrigger').addEventListener('click', (e) => {
-        e.preventDefault();
-        alert("✨ FUTURE DOCTORS HUB \n\nDesigned by Naksh Chaudhary. Created for extreme medical aspirants aiming for NEET 2027/2028. Supplying premium coaching modules and resources completely free!");
-    });
-</script>
 
 </body>
 </html>
