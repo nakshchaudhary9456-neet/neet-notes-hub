@@ -109,9 +109,16 @@
         .bg-biology { background: linear-gradient(135deg, #166534 0%, #15803d 100%); border: 1px solid rgba(255,255,255,0.1); }
         .bg-modules { background: linear-gradient(135deg, #6b21a8 0%, #7e22ce 100%); border: 1px solid rgba(255,255,255,0.1); }
 
-        .community-card { display: flex; align-items: center; justify-content: space-between; background: #0b132b; border: 1px solid rgba(56,189,248,0.2); padding: 16px; border-radius: 16px; color: #ffffff; text-decoration: none; font-weight: 700; font-size: 0.9rem; }
-        .join-pill { background: #38bdf8; color: #020617; font-size: 0.75rem; font-weight: 900; padding: 6px 14px; border-radius: 8px; }
+        /* WHATSAPP COMMUNITIES STYLES */
+        .whatsapp-channels-stack { display: flex; flex-direction: column; gap: 12px; margin-top: 10px; }
+        .community-card { display: flex; align-items: center; justify-content: space-between; background: #0b132b; border: 1px solid rgba(34, 197, 94, 0.3); padding: 16px; border-radius: 16px; color: #ffffff; text-decoration: none; transition: background 0.2s ease; }
+        .community-card:active { background: rgba(34, 197, 94, 0.1); }
+        .community-info { display: flex; flex-direction: column; gap: 4px; max-width: 70%; }
+        .community-title { font-size: 0.92rem; font-weight: 800; color: #22c55e; }
+        .community-desc { font-size: 0.75rem; color: #94a3b8; font-weight: 500; }
+        .join-pill { background: #22c55e; color: #ffffff; font-size: 0.75rem; font-weight: 900; padding: 8px 14px; border-radius: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
         
+        /* DONATION BOX STYLES WITH NEW QR CODE */
         .donation-box { background: linear-gradient(135deg, #030712 0%, #0b1536 100%); border: 1px solid rgba(56, 189, 248, 0.25); text-align: center; }
         .qr-frame-wrapper { background: #ffffff; padding: 12px; border-radius: 20px; display: inline-block; margin: 18px auto; border: 3px solid #38bdf8; }
         .qr-img { width: 180px; height: 180px; display: block; object-fit: contain; }
@@ -125,10 +132,7 @@
         .live-motivation-scroller { height: 350px; overflow-y: auto; background: rgba(2, 6, 23, 0.7); padding: 12px; border-radius: 16px; border: 1px solid rgba(56,189,248,0.1); }
         .quote-item-row { background: rgba(56, 189, 248, 0.03); border-left: 4px solid #38bdf8; padding: 12px; margin-bottom: 10px; font-size: 0.88rem; color: #e2e8f0; font-weight: 600; text-align: left; }
 
-        .about-text-line { font-size: 0.88rem; color: #cbd5e1; margin-bottom: 8px; display: flex; align-items: flex-start; gap: 8px; }
-        .about-text-line span { color: #f59e0b; }
-
-        /* FLOATING DOUBT BUTTON STYLES WITH UPDATED FIXED INDEX */
+        /* FLOATING DOUBT BUTTON STYLES (LINKED TO DOUBT GROUP ONLY) */
         .emergency-doubt-trigger {
             position: fixed;
             bottom: 25px;
@@ -147,7 +151,7 @@
             z-index: 999999 !important;
             text-transform: uppercase;
             border: 2px solid rgba(255,255,255,0.3);
-            transition: transform 0.2s ease, opacity 0.2s ease;
+            transition: transform 0.2s ease;
         }
         .emergency-doubt-trigger:active {
             transform: scale(0.95);
@@ -181,6 +185,29 @@
     </div>
 
     <div class="rotating-banner" id="bannerRotator">🩺 Aaj ki mehnat, kal naam ke aage "Dr." likhegi. 🔥</div>
+
+    <!-- WHATSAPP GROUPS VAULT -->
+    <div class="mega-card">
+        <div class="section-headline" style="color: #22c55e;">💬 OFFICIAL WHATSAPP HUB</div>
+        <div class="whatsapp-channels-stack">
+            <!-- Group 1 -->
+            <a href="https://chat.whatsapp.com/JORboxhbf3LL0sx6eHw8JB?mode=ac_t" target="_blank" class="community-card">
+                <div class="community-info">
+                    <span class="community-title">1️⃣ Notes & Material Group</span>
+                    <span class="community-desc">Sirf Premium PDFs, Target Modules aur Books ke liye.</span>
+                </div>
+                <div class="join-pill">Join</div>
+            </a>
+            <!-- Group 2 -->
+            <a href="https://chat.whatsapp.com/EtrXE1CSa3lFc7xnmDRBVt?mode=ac_t" target="_blank" class="community-card">
+                <div class="community-info">
+                    <span class="community-title">2️⃣ Doubt & Discussion Group</span>
+                    <span class="community-desc">Help, Live Chatting aur Suggestions ke liye join karein.</span>
+                </div>
+                <div class="join-pill">Join</div>
+            </a>
+        </div>
+    </div>
 
     <div class="mega-card">
         <div class="section-headline" style="color: #38bdf8;">📂 THE CORE NOTES VAULT</div>
@@ -220,6 +247,19 @@
         </div>
     </div>
 
+    <!-- PREMIUM DONATION BOX WITH LIVE NEW QR CODE -->
+    <div class="mega-card donation-box">
+        <div class="section-headline" style="color: #f59e0b; justify-content: center; border-bottom: none; padding-bottom: 0; margin-bottom: 5px;">❤️ SUPPORT OUR MISSION</div>
+        <p style="font-size: 0.8rem; color: #94a3b8; font-weight: 500;">Agar is system se aapki help ho rhi ho, toh support zaroor karein.</p>
+        <div class="qr-frame-wrapper">
+            <!-- UPDATED WITH NEW QR FILENAME 27222.jpg -->
+            <img src="27222.jpg" alt="UPI Donation QR Code" class="qr-img">
+        </div>
+        <div>
+            <span class="upi-badge">UPI ID: nakshchaudhary9456@gmail.com</span>
+        </div>
+    </div>
+
     <!-- 150 LINES MOTIVATION VAULT -->
     <div class="mega-card">
         <div class="section-headline" style="color: #38bdf8;">🔥 INFINITE RANKERS MOTIVATION (150+ VAULT)</div>
@@ -239,7 +279,7 @@
             <div class="quote-item-row">✨ Test series me number kam aaye toh rona nahi, balki un galtiyo se seekhna hai. 📊🔥</div>
             <div class="quote-item-row">✨ Naksh Chaudhary ka ek hi maqsad hai, har ek bache ko doctor bante dekhna. 🏆🩺</div>
             <div class="quote-item-row">✨ Saccha hard work kabhi bekaar nahi jata, khuda sab dekh raha hai. 🙏✨</div>
-            <div class="quote-item-row">✨ Har ek mock test tumhare final match ki practice hai, poori jaan jhonk do. 🏏🎯</div>
+            <div class="quote-item-row">✨ Har ek mock test tumhere final match ki practice hai, poori jaan jhonk do. 🏏🎯</div>
             <div class="quote-item-row">✨ Jab thak jao toh socho ki tumne ye shuru hi kyun kiya tha! 💭⚡</div>
             <div class="quote-item-row">✨ Maa-baap ki aankhon ke sapne poore karne ki zimmedari ab tumhari hai. 👨‍👩‍👦❤️</div>
             <div class="quote-item-row">✨ Ghante ginn kar padhai nahi hoti, padhai toh tab tak hoti hai jab tak target poora na ho. ⏱️❌</div>
@@ -278,7 +318,7 @@
             <div class="quote-item-row">✨ Apne andar ke dar ko khatam karo aur ek warrior ki tarah padho. ⚔️🦁</div>
             <div class="quote-item-row">✨ Jab hath me surgical knife hogi, tab ye saari raato ki jaagna vasool ho jayega. 🔪🩺</div>
             <div class="quote-item-row">✨ Har ek negative marking tumse tumhari seat chhin sakti hai, dhyan se tick karo. 🎯❌</div>
-            <divclass="quote-item-row">✨ Inorganic Chemistry ke exceptions hi asal me rank-booster hote hain, unhe baar-baar padhein. 🧪💎</div>
+            <div class="quote-item-row">✨ Inorganic Chemistry ke exceptions hi asal me rank-booster hote hain, unhe baar-baar padhein. 🧪💎</div>
             <div class="quote-item-row">✨ Consistency hi aapko ordinary se extraordinary banati hai. 📈🔥</div>
         </div>
     </div>
@@ -293,9 +333,9 @@
 
 </div>
 
-<!-- GREEN FLOATING DOUBT BUTTON FIXED ON RIGHT SIDE -->
-<a href="https://t.me/+Fw60X9l_Sg01YjVl" target="_blank" class="emergency-doubt-trigger">
-    💬 Ask Doubt
+<!-- FLOATING INSTANT DOUBT BUTTON (LINKED TO WHATSAPP DOUBT GROUP ONLY) -->
+<a href="https://chat.whatsapp.com/EtrXE1CSa3lFc7xnmDRBVt?mode=ac_t" target="_blank" class="emergency-doubt-trigger">
+    ⚡ Instant Asked Doubt
 </a>
 
 </body>
