@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Future Doctors Hub | Premium Portal</title>
-    <!-- Ultra Premium Fonts Pairing -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
     <style>
         * {
@@ -14,7 +13,7 @@
             font-family: 'Inter', sans-serif;
         }
         body {
-            background: linear-gradient(180deg, #030712 0%, #0b1536 100%);
+            background: linear-gradient(180deg, #020617 0%, #070f2e 100%);
             color: #f3f4f6;
             padding: 16px;
             padding-bottom: 120px;
@@ -38,15 +37,15 @@
             font-size: 1.75rem;
             font-weight: 900;
             letter-spacing: 1.5px;
-            background: linear-gradient(90deg, #38bdf8, #818cf8, #38bdf8);
+            background: linear-gradient(90deg, #38bdf8, #60a5fa, #38bdf8);
             background-size: 200% auto;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+            text-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
         }
         .brand-subtitle {
             font-size: 0.75rem;
-            color: #64748b;
+            color: #475569;
             text-transform: uppercase;
             letter-spacing: 3px;
             font-weight: 700;
@@ -55,13 +54,13 @@
 
         /* METRIC GLASSMORPHISM CARDS */
         .mega-card {
-            background: rgba(11, 21, 44, 0.85);
-            border: 1px solid rgba(56, 189, 248, 0.12);
+            background: rgba(10, 17, 40, 0.9);
+            border: 1px solid rgba(56, 189, 248, 0.15);
             border-radius: 24px;
             padding: 24px 20px;
             margin-bottom: 24px;
-            backdrop-filter: blur(16px);
-            box-shadow: 0 15px 35px -10px rgba(0,0,0,0.5);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 20px 40px -15px rgba(0,0,0,0.7);
             position: relative;
         }
         
@@ -75,16 +74,16 @@
             gap: 10px;
             letter-spacing: -0.3px;
             text-transform: uppercase;
-            border-bottom: 2px solid rgba(255,255,255,0.06);
+            border-bottom: 2px solid rgba(56, 189, 248, 0.15);
             padding-bottom: 10px;
         }
 
-        /* SYSTEM FOUNDER BLOCK */
+        /* SYSTEM ULTRA DARK PREMIUM FOUNDER BLOCK */
         .hero-block {
-            background: linear-gradient(135deg, #070e24 0%, #030712 100%);
-            border: 2px solid #38bdf8;
+            background: radial-gradient(circle at top, #0b1536 0%, #020617 100%);
+            border: 2px solid rgba(56, 189, 248, 0.4);
             text-align: center;
-            box-shadow: 0 0 30px rgba(56, 189, 248, 0.15);
+            box-shadow: 0 0 35px rgba(56, 189, 248, 0.2);
         }
         .avatar-frame {
             position: relative;
@@ -97,14 +96,14 @@
             height: 100%;
             border-radius: 50%;
             object-fit: cover;
-            border: 4px solid #fcd34d;
-            box-shadow: 0 0 25px rgba(252, 211, 77, 0.3);
+            border: 4px solid #38bdf8;
+            box-shadow: 0 0 25px rgba(56, 189, 248, 0.4);
         }
         .verified-badge {
             position: absolute;
             bottom: 6px;
             right: 6px;
-            background: #f59e0b;
+            background: #38bdf8;
             color: #020617;
             border-radius: 50%;
             width: 24px;
@@ -114,14 +113,14 @@
             align-items: center;
             justify-content: center;
             font-weight: 900;
-            border: 2px solid #030712;
+            border: 2px solid #020617;
         }
         .royal-gold-text {
             font-size: 1.8rem;
             font-weight: 900;
             letter-spacing: 0.5px;
             margin: 4px 0 16px 0;
-            background: linear-gradient(135deg, #fffbeb 0%, #f59e0b 50%, #b45309 100%);
+            background: linear-gradient(135deg, #ffffff 0%, #38bdf8 60%, #1d4ed8 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             text-transform: uppercase;
@@ -135,8 +134,8 @@
             margin-bottom: 24px;
         }
         .metric-card {
-            background: rgba(15, 27, 58, 0.7);
-            border: 1px solid rgba(56, 189, 248, 0.08);
+            background: rgba(14, 26, 61, 0.8);
+            border: 1px solid rgba(56, 189, 248, 0.15);
             border-radius: 16px;
             padding: 14px 4px;
             text-align: center;
@@ -144,7 +143,7 @@
         .metric-num {
             font-size: 1.3rem;
             font-weight: 900;
-            color: #f59e0b;
+            color: #38bdf8;
             display: block;
         }
         .metric-name {
@@ -158,18 +157,18 @@
 
         /* DYNAMIC ALERT BANNER */
         .rotating-banner {
-            background: linear-gradient(90deg, #dc2626 0%, #d97706 50%, #4f46e5 100%);
+            background: linear-gradient(90deg, #1e3a8a 0%, #0369a1 50%, #1d4ed8 100%);
             padding: 15px;
             border-radius: 16px;
             font-size: 0.9rem;
             font-weight: 700;
             text-align: center;
             margin-bottom: 24px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-            border-left: 5px solid #ffffff;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+            border-left: 5px solid #38bdf8;
         }
 
-        /* SUBJECT CONTENT BLOCKS MATRIX */
+        /* UNIFORM PREMIUM BLUE MATERIAL BOXES */
         .subject-segment-headline {
             font-size: 1.05rem;
             font-weight: 800;
@@ -179,41 +178,18 @@
             align-items: center;
             gap: 8px;
             text-transform: uppercase;
+            color: #38bdf8;
         }
         .resource-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 12px;
         }
-
-        /* PREMIUM SUBJECT MODULES SPECIFICATIONS */
-        .subject-segment-headline.phys-color { color: #a5b4fc; }
-        .phys-box {
-            background: #1e1b4b; 
-            border: 1px solid rgba(129, 140, 248, 0.4);
-            box-shadow: inset 0 0 12px rgba(129, 140, 248, 0.1);
+        .premium-blue-box {
+            background: linear-gradient(135deg, #0b1536 0%, #050b1e 100%);
+            border: 1px solid rgba(56, 189, 248, 0.35);
+            box-shadow: inset 0 0 12px rgba(56, 189, 248, 0.15);
         }
-        
-        .subject-segment-headline.chem-color { color: #2dd4bf; }
-        .chem-box {
-            background: #064e3b;
-            border: 1px solid rgba(45, 212, 191, 0.4);
-            box-shadow: inset 0 0 12px rgba(45, 212, 191, 0.1);
-        }
-
-        .subject-segment-headline.bio-color { color: #4ade80; }
-        .bio-box {
-            background: #022c22;
-            border: 1px solid rgba(74, 222, 128, 0.4);
-            box-shadow: inset 0 0 12px rgba(74, 222, 128, 0.1);
-        }
-
-        .subject-segment-headline.ref-color { color: #cbd5e1; }
-        .ref-box {
-            background: #1e293b;
-            border: 1px solid rgba(203, 213, 225, 0.25);
-        }
-
         .resource-btn {
             color: #ffffff;
             text-decoration: none;
@@ -226,18 +202,18 @@
             align-items: center;
             justify-content: center;
             gap: 8px;
-            transition: transform 0.2s;
+            transition: all 0.2s ease;
         }
         .resource-btn span { font-size: 1.2rem; }
-        .resource-btn:active { transform: scale(0.95); }
+        .resource-btn:active { transform: scale(0.95); background: rgba(56, 189, 248, 0.2); }
 
-        /* SEPARATED WHATSAPP ECOSYSTEM STACK */
+        /* WHATSAPP ECOSYSTEM STACK */
         .community-card {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            background: #0f1c3f;
-            border: 1px solid rgba(56,189,248,0.15);
+            background: #0b132b;
+            border: 1px solid rgba(56,189,248,0.2);
             padding: 16px;
             border-radius: 16px;
             color: #ffffff;
@@ -245,49 +221,51 @@
             font-weight: 700;
             font-size: 0.9rem;
         }
-        .community-card:active { background: #172a5c; }
+        .community-card:active { background: #111c3e; }
         .join-pill {
-            background: #25d366;
-            color: #000000;
+            background: #38bdf8;
+            color: #020617;
             font-size: 0.75rem;
             font-weight: 900;
             padding: 6px 14px;
             border-radius: 8px;
         }
 
-        /* DONATION FRAME DESIGN */
+        /* HIGH VISIBILITY DONATION QR FRAME */
         .donation-box {
-            background: linear-gradient(135deg, #1e1b4b 0%, #311042 100%);
-            border: 1px solid rgba(219, 39, 119, 0.3);
+            background: linear-gradient(135deg, #030712 0%, #0b1536 100%);
+            border: 1px solid rgba(56, 189, 248, 0.25);
             text-align: center;
         }
-        .qr-frame {
+        .qr-frame-wrapper {
             background: #ffffff;
-            padding: 12px;
-            border-radius: 16px;
+            padding: 16px;
+            border-radius: 20px;
             display: inline-block;
-            margin: 15px auto;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+            margin: 18px auto;
+            box-shadow: 0 0 30px rgba(56, 189, 248, 0.3);
+            border: 3px solid #38bdf8;
         }
         .qr-img {
-            width: 160px;
-            height: 160px;
+            width: 170px;
+            height: 170px;
             display: block;
+            object-fit: contain;
         }
         .upi-badge {
-            background: rgba(255, 255, 255, 0.08);
-            border: 1px dashed rgba(255,255,255,0.2);
+            background: rgba(56, 189, 248, 0.08);
+            border: 1px dashed rgba(56, 189, 248, 0.4);
             padding: 8px 14px;
             border-radius: 10px;
             font-size: 0.85rem;
-            color: #fcd34d;
+            color: #38bdf8;
             font-weight: 700;
             display: inline-flex;
             align-items: center;
             gap: 6px;
         }
 
-        /* UTILITY TILES (ABOUT & CONTACT) */
+        /* BOTTOM UTILITY TILES (ABOUT & CONTACT) */
         .info-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -296,20 +274,20 @@
             margin-bottom: 24px;
         }
         .info-tile {
-            background: rgba(30, 41, 59, 0.6);
-            border: 1px solid rgba(56, 189, 248, 0.15);
+            background: rgba(11, 22, 54, 0.8);
+            border: 1px solid rgba(56, 189, 248, 0.25);
             border-radius: 16px;
             padding: 16px;
             text-decoration: none;
             color: #ffffff;
             transition: all 0.2s ease;
         }
-        .info-tile:active { background: rgba(51, 65, 85, 0.8); transform: scale(0.97); }
+        .info-tile:active { background: rgba(56, 189, 248, 0.15); transform: scale(0.97); }
         .info-tile-title {
             font-size: 0.95rem;
             font-weight: 800;
             color: #38bdf8;
-            margin-bottom: 6px;
+            margin-bottom: 4px;
             display: flex;
             align-items: center;
             gap: 6px;
@@ -318,55 +296,55 @@
 
         /* INFINITE MOTIVATION SYSTEM SCROLLER */
         .live-motivation-scroller {
-            max-height: 280px;
+            max-height: 290px;
             overflow-y: auto;
             padding-right: 4px;
-            border: 1px solid rgba(255,255,255,0.05);
+            border: 1px solid rgba(56, 189, 248, 0.15);
             border-radius: 16px;
-            background: rgba(3, 7, 18, 0.6);
+            background: rgba(2, 6, 23, 0.7);
             padding: 12px;
         }
         .live-motivation-scroller::-webkit-scrollbar { width: 5px; }
-        .live-motivation-scroller::-webkit-scrollbar-thumb { background: #ef4444; border-radius: 10px; }
+        .live-motivation-scroller::-webkit-scrollbar-thumb { background: #38bdf8; border-radius: 10px; }
         
         .quote-item-row {
-            background: rgba(255, 255, 255, 0.02);
-            border-left: 4px solid #ef4444;
+            background: rgba(56, 189, 248, 0.03);
+            border-left: 4px solid #38bdf8;
             padding: 12px;
             border-radius: 0 12px 12px 0;
             margin-bottom: 10px;
-            font-size: 0.85rem;
+            font-size: 0.88rem;
             line-height: 1.5;
-            color: #cbd5e1;
+            color: #e2e8f0;
             font-weight: 600;
         }
 
-        /* FLOATING EMERGENCY INTERCEPTOR BUTTON */
+        /* FLOATING INSTANT DOUBT INTERCEPTOR WIDGET (GREEN NEON) */
         .emergency-doubt-trigger {
             position: fixed;
             bottom: 24px;
             right: 16px;
-            background: #25D366;
+            background: #22c55e;
             color: #ffffff;
-            padding: 12px 18px;
+            padding: 14px 22px;
             border-radius: 50px;
-            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+            box-shadow: 0 10px 35px rgba(34, 197, 94, 0.5);
             text-decoration: none;
             font-weight: 900;
-            font-size: 0.82rem;
+            font-size: 0.85rem;
             display: flex;
             align-items: center;
-            gap: 6px;
+            gap: 8px;
             z-index: 999999;
             text-transform: uppercase;
-            letter-spacing: 0.3px;
-            border: 2px solid rgba(255,255,255,0.2);
-            animation: pulseWidget 2s infinite ease-in-out;
+            letter-spacing: 0.5px;
+            border: 2px solid rgba(255,255,255,0.3);
+            animation: pulseWidget 2.2s infinite ease-in-out;
         }
         @keyframes pulseWidget {
-            0% { transform: scale(1); box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4); }
-            50% { transform: scale(1.04); box-shadow: 0 10px 35px rgba(37, 211, 102, 0.6); }
-            100% { transform: scale(1); box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4); }
+            0% { transform: scale(1); box-shadow: 0 10px 35px rgba(34, 197, 94, 0.5); }
+            50% { transform: scale(1.06); box-shadow: 0 10px 40px rgba(34, 197, 94, 0.7); }
+            100% { transform: scale(1); box-shadow: 0 10px 35px rgba(34, 197, 94, 0.5); }
         }
     </style>
 </head>
@@ -374,100 +352,104 @@
 
 <div class="container">
 
-    <!-- SUPREME HEADER ARCHITECTURE -->
     <div class="premium-header">
         <div class="brand-logo-text">⚡ FD HUB SYSTEM</div>
         <div class="brand-subtitle">The Medical Aspirants Ecosystem</div>
     </div>
 
-    <!-- MAIN BRAND CARD -->
     <div class="mega-card hero-block">
         <h2 style="color: #38bdf8; margin: 0; font-size: 1.6rem; letter-spacing: 0.5px; font-weight: 900;">🩺 FUTURE DOCTORS</h2>
         <div class="avatar-frame">
             <img src="39015.png" alt="Naksh Chaudhary" class="avatar-img">
             <div class="verified-badge">✓</div>
         </div>
-        <p style="color: #f59e0b; font-weight: 800; margin-bottom: 2px; font-size: 0.95rem; letter-spacing: 0.5px;">🏆 Founder & Mentor</p>
+        <p style="color: #94a3b8; font-weight: 800; margin-bottom: 2px; font-size: 0.95rem; letter-spacing: 0.5px;">🏆 Founder & Mentor</p>
         <div class="royal-gold-text">Naksh Chaudhary</div>
-        <span style="background: rgba(56, 189, 248, 0.15); color: #38bdf8; padding: 6px 16px; border-radius: 20px; font-size: 0.75rem; font-weight: 800; border: 1px solid rgba(56,189,248,0.3);">✨ Mission NEET 2027/2028 ✨</span>
+        <span style="background: rgba(56, 189, 248, 0.15); color: #38bdf8; padding: 6px 16px; border-radius: 20px; font-size: 0.75rem; font-weight: 800; border: 1px solid rgba(56,189,248,0.35);">✨ Mission NEET 2027/2028 ✨</span>
     </div>
 
-    <!-- PLATFORM METRICS -->
     <div class="metrics-row">
         <div class="metric-card"><span class="metric-num">500+</span><span class="metric-name">📚 Premium Notes</span></div>
         <div class="metric-card"><span class="metric-num">1000+</span><span class="metric-name">📝 Chapter PYQs</span></div>
         <div class="metric-card"><span class="metric-num">5000+</span><span class="metric-name">👨‍⚕️ Aspirants Trust</span></div>
     </div>
 
-    <!-- ALERT BANNER -->
     <div class="rotating-banner" id="bannerRotator">
-        🩺 Aaj ki mehnat, kal naam ke aage "Dr." likhegi. 🔥
+        **🩺 Aaj ki mehnat, kal naam ke aage "Dr." likhegi. 🔥**
     </div>
 
-    <!-- ==================== MAIN SYSTEM MATERIAL VAULT ==================== -->
     <div class="mega-card">
         <div class="section-headline" style="color: #38bdf8;">📂 THE CORE NOTES VAULT</div>
         
-        <!-- PHYSICS -->
-        <div class="subject-segment-headline phys-color">⚡ Physics Booster</div>
+        <div class="subject-segment-headline">⚡ Physics Booster</div>
         <div class="resource-grid" style="margin-bottom: 22px;">
-            <a href="https://drive.google.com/drive/folders/1kRTvvUrbj9_5rwcYh3fsTxF66iH1Lz1I" target="_blank" class="resource-btn phys-box"><span>📚</span> Chapter Notes</a>
-            <a href="https://drive.google.com/drive/folders/1kRTvvUrbj9_5rwcYh3fsTxF66iH1Lz1I" target="_blank" class="resource-btn phys-box"><span>📝</span> Chapter PYQs</a>
-            <a href="https://drive.google.com/drive/folders/1kRTvvUrbj9_5rwcYh3fsTxF66iH1Lz1I" target="_blank" class="resource-btn phys-box"><span>📐</span> Formula Sheet</a>
-            <a href="https://drive.google.com/drive/folders/1kRTvvUrbj9_5rwcYh3fsTxF66iH1Lz1I" target="_blank" class="resource-btn phys-box"><span>⚙️</span> Derivations</a>
+            <a href="https://drive.google.com/drive/folders/1kRTvvUrbj9_5rwcYh3fsTxF66iH1Lz1I" target="_blank" class="resource-btn premium-blue-box"><span>📚</span> Chapter Notes</a>
+            <a href="https://drive.google.com/drive/folders/1kRTvvUrbj9_5rwcYh3fsTxF66iH1Lz1I" target="_blank" class="resource-btn premium-blue-box"><span>📝</span> Chapter PYQs</a>
+            <a href="https://drive.google.com/drive/folders/1kRTvvUrbj9_5rwcYh3fsTxF66iH1Lz1I" target="_blank" class="resource-btn premium-blue-box"><span>📐</span> Formula Sheet</a>
+            <a href="https://drive.google.com/drive/folders/1kRTvvUrbj9_5rwcYh3fsTxF66iH1Lz1I" target="_blank" class="resource-btn premium-blue-box"><span>⚙️</span> Derivations</a>
         </div>
 
-        <!-- CHEMISTRY -->
-        <div class="subject-segment-headline chem-color">🧪 Chemistry Magic</div>
+        <div class="subject-segment-headline">🧪 Chemistry Magic</div>
         <div class="resource-grid" style="margin-bottom: 22px;">
-            <a href="https://drive.google.com/drive/folders/1NrYRFaTj9SZGj_evJgxt1nvT6ggYKGsh" target="_blank" class="resource-btn chem-box"><span>📚</span> Chapter Notes</a>
-            <a href="https://drive.google.com/drive/folders/1NrYRFaTj9SZGj_evJgxt1nvT6ggYKGsh" target="_blank" class="resource-btn chem-box"><span>📝</span> Chapter PYQs</a>
-            <a href="https://drive.google.com/drive/folders/1NrYRFaTj9SZGj_evJgxt1nvT6ggYKGsh" target="_blank" class="resource-btn chem-box"><span>🔥</span> Imp Reactions</a>
-            <a href="https://drive.google.com/drive/folders/1NrYRFaTj9SZGj_evJgxt1nvT6ggYKGsh" target="_blank" class="resource-btn chem-box"><span>💎</span> Core Concepts</a>
+            <a href="https://drive.google.com/drive/folders/1NrYRFaTj9SZGj_evJgxt1nvT6ggYKGsh" target="_blank" class="resource-btn premium-blue-box"><span>📚</span> Chapter Notes</a>
+            <a href="https://drive.google.com/drive/folders/1NrYRFaTj9SZGj_evJgxt1nvT6ggYKGsh" target="_blank" class="resource-btn premium-blue-box"><span>📝</span> Chapter PYQs</a>
+            <a href="https://drive.google.com/drive/folders/1NrYRFaTj9SZGj_evJgxt1nvT6ggYKGsh" target="_blank" class="resource-btn premium-blue-box"><span>🔥</span> Imp Reactions</a>
+            <a href="https://drive.google.com/drive/folders/1NrYRFaTj9SZGj_evJgxt1nvT6ggYKGsh" target="_blank" class="resource-btn premium-blue-box"><span>💎</span> Core Concepts</a>
         </div>
 
-        <!-- BIOLOGY -->
-        <div class="subject-segment-headline bio-color">🌿 Biology Core</div>
+        <div class="subject-segment-headline">🌿 Biology Core</div>
         <div class="resource-grid" style="margin-bottom: 22px;">
-            <a href="https://drive.google.com/drive/folders/1sdaXLic_wnOs2BsfcgaJwT4CaQK6RTiO" target="_blank" class="resource-btn bio-box"><span>📚</span> Chapter Notes</a>
-            <a href="https://drive.google.com/drive/folders/1sdaXLic_wnOs2BsfcgaJwT4CaQK6RTiO" target="_blank" class="resource-btn bio-box"><span>📝</span> Chapter PYQs</a>
-            <a href="https://drive.google.com/drive/folders/1sdaXLic_wnOs2BsfcgaJwT4CaQK6RTiO" target="_blank" class="resource-btn bio-box"><span>🎯</span> Short Notes</a>
-            <a href="https://drive.google.com/drive/folders/1sdaXLic_wnOs2BsfcgaJwT4CaQK6RTiO" target="_blank" class="resource-btn bio-box"><span>🧬</span> Imp Diagrams</a>
+            <a href="https://drive.google.com/drive/folders/1sdaXLic_wnOs2BsfcgaJwT4CaQK6RTiO" target="_blank" class="resource-btn premium-blue-box"><span>📚</span> Chapter Notes</a>
+            <a href="https://drive.google.com/drive/folders/1sdaXLic_wnOs2BsfcgaJwT4CaQK6RTiO" target="_blank" class="resource-btn premium-blue-box"><span>📝</span> Chapter PYQs</a>
+            <a href="https://drive.google.com/drive/folders/1sdaXLic_wnOs2BsfcgaJwT4CaQK6RTiO" target="_blank" class="resource-btn premium-blue-box"><span>🎯</span> Short Notes</a>
+            <a href="https://drive.google.com/drive/folders/1sdaXLic_wnOs2BsfcgaJwT4CaQK6RTiO" target="_blank" class="resource-btn premium-blue-box"><span>🧬</span> Imp Diagrams</a>
         </div>
 
-        <!-- PREMIUM REFERENCE VAULT -->
-        <div class="subject-segment-headline ref-color">📖 Premium Reference Modules</div>
+        <div class="subject-segment-headline">📖 Premium Reference Modules</div>
         <p style="color: #64748b; font-size: 0.8rem; margin-bottom: 12px; font-weight:600; padding-left:2px;">Allen, Akash, aur standard coaching modules completely synced.</p>
         <div class="resource-grid">
-            <a href="https://drive.google.com/drive/folders/1948djiD7rn8ERKhsLRWZihk5LaGadAsw" target="_blank" class="resource-btn ref-box"><span>🏢</span> Institute Modules</a>
-            <a href="https://drive.google.com/drive/folders/1948djiD7rn8ERKhsLRWZihk5LaGadAsw" target="_blank" class="resource-btn ref-box"><span>📕</span> Reference Books</a>
+            <a href="https://drive.google.com/drive/folders/1948djiD7rn8ERKhsLRWZihk5LaGadAsw" target="_blank" class="resource-btn premium-blue-box"><span>🏢</span> Institute Modules</a>
+            <a href="https://drive.google.com/drive/folders/1948djiD7rn8ERKhsLRWZihk5LaGadAsw" target="_blank" class="resource-btn premium-blue-box"><span>📕</span> Reference Books</a>
         </div>
     </div>
 
-    <!-- ==================== WHATSAPP ECOSYSTEM SECTION 1 ==================== -->
     <div class="mega-card">
-        <div class="section-headline" style="color: #34d399;">🗂️ NOTES & MATERIAL ECOSYSTEM</div>
+        <div class="section-headline" style="color: #38bdf8;">🔥 INFINITE RANKERS MOTIVATION</div>
+        <div class="live-motivation-scroller">
+            <div class="quote-item-row">✨ Syllabus bada hai toh kya hua, tumhara hosla bhi toh chota nahi hai! 🩺🔥</div>
+            <div class="quote-item-row">✨ NCERT ki ek ek line tumhare selection ka rasta tay karegi. 📚🎯</div>
+            <div class="quote-item-row">✨ Jab log raat ko so rahe honge, tab tumhari mehnat itihaas likh rahi hogi. 🌌✍️</div>
+            <div class="quote-item-row">✨ White coat aise hi nahi milti, uske liye din raat jalna padta hai. 🔬🩺</div>
+            <div class="quote-item-row">✨ AIIMS Delhi ki deewarein tumhara intezaar kar rahi hain, ruke mat raho! 🏢💪</div>
+            <div class="quote-item-row">✨ Drop lena kamzori nahi, ek aur mauka hai unko galat saabit karne ka! 🔥🧠</div>
+            <div class="quote-item-row">✨ Stethoscope ka vazan vahi utha sakta hai jo aaj kitabon ka bojh uthayega. 🩺🎒</div>
+            <div class="quote-item-row">✨ NEET tumhari qismat nahi, tumhari mehnat ke dum par chalne wala exam hai. 💯🔥</div>
+            <div class="quote-item-row">✨ Ghar walo ki aankhon ke aansu khushi me badalna tumhara farz hai. ❤️👨‍⚕️</div>
+            <div class="quote-item-row">✨ Jo log tum par shak karte hain, unhe apne result se jawab do. 📇🧠</div>
+        </div>
+    </div>
+
+    <div class="mega-card">
+        <div class="section-headline" style="color: #38bdf8;">🗂️ NOTES & MATERIAL ECOSYSTEM</div>
         <a href="https://chat.whatsapp.com/JORboxhbf3LL0sx6eHw8JB?mode=ac_t" target="_blank" class="community-card">
             <span>📚 Join Material Group (PDFs & Updates Only)</span>
             <span class="join-pill">Join Group</span>
         </a>
     </div>
 
-    <!-- ==================== WHATSAPP ECOSYSTEM SECTION 2 ==================== -->
     <div class="mega-card">
-        <div class="section-headline" style="color: #60a5fa;">💬 DOUBT RESOLUTION ARENA</div>
+        <div class="section-headline" style="color: #38bdf8;">💬 DOUBT RESOLUTION ARENA</div>
         <a href="https://chat.whatsapp.com/EtrXE1CSa3lFc7xnmDRBVt?mode=ac_t" target="_blank" class="community-card">
             <span>🤝 Join Doubt Discussion & Help Arena</span>
             <span class="join-pill">Join Group</span>
         </a>
     </div>
 
-    <!-- ==================== PREMIUM DONATION QR MODULE ==================== -->
     <div class="mega-card donation-box">
-        <div class="section-headline" style="color: #ec4899; border-bottom: 2px solid rgba(236, 72, 153, 0.15); justify-content: center;">💝 SUPPORT OUR MISSION</div>
+        <div class="section-headline" style="color: #38bdf8; border-bottom: 2px solid rgba(56, 189, 248, 0.2); justify-content: center;">💝 SUPPORT OUR MISSION</div>
         <p style="color: #cbd5e1; font-size: 0.85rem; font-weight: 500;">Server aur domain maintain karne ke liye aapki choti si help bhi humein continuous free content dene me madad karegi.</p>
         
-        <div class="qr-frame">
+        <div class="qr-frame-wrapper">
             <img src="qr.png" alt="Donation QR Code" class="qr-img">
         </div>
         
@@ -478,14 +460,16 @@
         </div>
     </div>
 
-    <!-- ==================== INFINITE MOTIVATION RACK ==================== -->
-    <div class="mega-card">
-        <div class="section-headline" style="color: #ef4444;">🔥 INFINITE RANKERS MOTIVATION</div>
-        <div class="live-motivation-scroller">
-            <div class="quote-item-row">✨ Syllabus bada hai toh kya hua, tumhara hosla bhi toh chota nahi hai! 🩺🔥</div>
-            <div class="quote-item-row">✨ NCERT ki ek ek line tumhare selection ka rasta tay karegi. 📚🎯</div>
-            <div class="quote-item-row">✨ Jab log raat ko so rahe honge, tab tumhari mehnat itihaas likh rahi hogi. 🌌✍️</div>
-            <div class="quote-item-row">✨ White coat aise hi nahi milti, uske liye din raat jalna padta hai. 🔬🩺</div>
-            <div class="quote-item-row">✨ AIIMS Delhi ki deewarein tumhara intezaar kar rahi hain, ruke mat raho! 🏢💪</div>
-            <div class="quote-item-row">✨ Drop lena kamzori nahi, ek aur mauka hai unko galat saabit karne ka! 🔥🧠</div>
-            <
+    <div class="info-grid">
+        <a href="#about" id="aboutTrigger" class="info-tile">
+            <div class="info-tile-title">ℹ️ About Us</div>
+            <div class="info-tile-desc">Know our vision and system targets for medical edge.</div>
+        </a>
+        <a href="mailto:support@fdhub.com" class="info-tile">
+            <div class="info-tile-title">📩 Contact Us</div>
+            <div class="info-tile-desc">Facing errors? Connect instantly with admin support.</div>
+        </a>
+    </div>
+
+    <div style="text-align: center; color: #475569; font-size: 0.78rem; padding: 10px 0 10px 0;">
+        © 2026 Future Doctors
