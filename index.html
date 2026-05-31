@@ -4,36 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Future Doctors Hub | Premium Portal</title>
-    <!-- Ultra Premium Fonts Pairing -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Inter', sans-serif;
-        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
         body {
             background: linear-gradient(180deg, #020617 0%, #070f2e 100%);
             color: #f3f4f6;
             padding: 16px;
-            padding-bottom: 120px; /* Padding for floating widget safety */
+            padding-bottom: 120px;
             line-height: 1.6;
         }
-        .container {
-            max-width: 480px;
-            margin: 0 auto;
-        }
-        
-        h1, h2, h3, .brand-logo-text, .section-headline, .royal-gold-text {
-            font-family: 'Poppins', sans-serif;
-        }
-
-        /* PREMIUM HEADER DESIGN */
-        .premium-header {
-            text-align: center;
-            padding: 20px 0 25px 0;
-        }
+        .container { max-width: 480px; margin: 0 auto; }
+        h1, h2, h3, .brand-logo-text, .section-headline, .royal-gold-text { font-family: 'Poppins', sans-serif; }
+        .premium-header { text-align: center; padding: 20px 0 25px 0; }
         .brand-logo-text {
             font-size: 1.75rem;
             font-weight: 900;
@@ -42,18 +25,8 @@
             background-size: 200% auto;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
         }
-        .brand-subtitle {
-            font-size: 0.75rem;
-            color: #475569;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            font-weight: 700;
-            margin-top: 4px;
-        }
-
-        /* METRIC GLASSMORPHISM CARDS */
+        .brand-subtitle { font-size: 0.75rem; color: #475569; text-transform: uppercase; letter-spacing: 3px; font-weight: 700; margin-top: 4px; }
         .mega-card {
             background: rgba(10, 17, 40, 0.9);
             border: 1px solid rgba(56, 189, 248, 0.15);
@@ -61,11 +34,7 @@
             padding: 24px 20px;
             margin-bottom: 24px;
             backdrop-filter: blur(20px);
-            box-shadow: 0 20px 40px -15px rgba(0,0,0,0.7);
-            position: relative;
         }
-        
-        /* STYLISH ULTRA BOLD HEADLINES */
         .section-headline {
             font-size: 1.15rem;
             font-weight: 900;
@@ -73,257 +42,59 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            letter-spacing: -0.3px;
             text-transform: uppercase;
             border-bottom: 2px solid rgba(56, 189, 248, 0.15);
             padding-bottom: 10px;
         }
-
-        /* SYSTEM ULTRA DARK PREMIUM FOUNDER BLOCK */
         .hero-block {
             background: radial-gradient(circle at top, #0b1536 0%, #020617 100%);
             border: 2px solid rgba(56, 189, 248, 0.4);
             text-align: center;
             box-shadow: 0 0 35px rgba(56, 189, 248, 0.2);
         }
-        .avatar-frame {
-            position: relative;
-            width: 130px;
-            height: 130px;
-            margin: 15px auto 18px auto;
-        }
-        .avatar-img {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid #38bdf8;
-            box-shadow: 0 0 25px rgba(56, 189, 248, 0.4);
-        }
-        .verified-badge {
-            position: absolute;
-            bottom: 6px;
-            right: 6px;
-            background: #38bdf8;
-            color: #020617;
-            border-radius: 50%;
-            width: 24px;
-            height: 24px;
-            font-size: 14px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 900;
-            border: 2px solid #020617;
-        }
-
-        /* STYLISH ROYAL GOLD GRADIENT TEXT RESTORED */
+        .avatar-frame { position: relative; width: 130px; height: 130px; margin: 15px auto 18px auto; }
+        .avatar-img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 4px solid #38bdf8; }
+        .verified-badge { position: absolute; bottom: 6px; right: 6px; background: #38bdf8; color: #020617; border-radius: 50%; width: 24px; height: 24px; font-size: 14px; display: flex; align-items: center; justify-content: center; font-weight: 900; }
+        
+        /* ROYAL GOLD GRADIENT */
         .royal-gold-text {
             font-size: 1.95rem;
             font-weight: 900;
-            letter-spacing: 0.8px;
             margin: 6px 0 16px 0;
             background: linear-gradient(135deg, #ffe066 0%, #f59e0b 50%, #b45309 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             text-transform: uppercase;
-            text-shadow: 0 2px 10px rgba(245, 158, 11, 0.2);
         }
-
-        /* PLATFORM CORE METRICS COUNTERS */
-        .metrics-row {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 12px;
-            margin-bottom: 24px;
-        }
-        .metric-card {
-            background: rgba(14, 26, 61, 0.8);
-            border: 1px solid rgba(56, 189, 248, 0.15);
-            border-radius: 16px;
-            padding: 14px 4px;
-            text-align: center;
-        }
-        .metric-num {
-            font-size: 1.3rem;
-            font-weight: 900;
-            color: #38bdf8;
-            display: block;
-        }
-        .metric-name {
-            font-size: 0.68rem;
-            color: #94a3b8;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-top: 4px;
-        }
-
-        /* DYNAMIC ALERT BANNER */
-        .rotating-banner {
-            background: linear-gradient(90deg, #1e3a8a 0%, #0369a1 50%, #1d4ed8 100%);
-            padding: 15px;
-            border-radius: 16px;
-            font-size: 0.9rem;
-            font-weight: 700;
-            text-align: center;
-            margin-bottom: 24px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
-            border-left: 5px solid #38bdf8;
-        }
-
-        /* UNIFORM PREMIUM BLUE MATERIAL BOXES */
-        .subject-segment-headline {
-            font-size: 1.05rem;
-            font-weight: 800;
-            margin-top: 8px;
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            text-transform: uppercase;
-            color: #38bdf8;
-        }
-        .resource-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 12px;
-        }
-        .premium-blue-box {
-            background: linear-gradient(135deg, #0b1536 0%, #050b1e 100%);
-            border: 1px solid rgba(56, 189, 248, 0.35);
-            box-shadow: inset 0 0 12px rgba(56, 189, 248, 0.15);
-        }
-        .resource-btn {
-            color: #ffffff;
-            text-decoration: none;
-            padding: 16px 12px;
-            border-radius: 16px;
-            text-align: center;
-            font-size: 0.88rem;
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            transition: all 0.2s ease;
-        }
-        .resource-btn span { font-size: 1.2rem; }
-        .resource-btn:active { transform: scale(0.95); background: rgba(56, 189, 248, 0.2); }
-
-        /* WHATSAPP ECOSYSTEM STACK */
-        .community-card {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: #0b132b;
-            border: 1px solid rgba(56,189,248,0.2);
-            padding: 16px;
-            border-radius: 16px;
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 0.9rem;
-        }
-        .community-card:active { background: #111c3e; }
-        .join-pill {
-            background: #38bdf8;
-            color: #020617;
-            font-size: 0.75rem;
-            font-weight: 900;
-            padding: 6px 14px;
-            border-radius: 8px;
-        }
-
-        /* HIGH-VISIBILITY QR FRAME WORKING CODE */
-        .donation-box {
-            background: linear-gradient(135deg, #030712 0%, #0b1536 100%);
-            border: 1px solid rgba(56, 189, 248, 0.25);
-            text-align: center;
-        }
-        .qr-frame-wrapper {
-            background: #ffffff;
-            padding: 12px;
-            border-radius: 20px;
-            display: inline-block;
-            margin: 18px auto;
-            box-shadow: 0 0 30px rgba(56, 189, 248, 0.3);
-            border: 3px solid #38bdf8;
-        }
-        .qr-img {
-            width: 180px;
-            height: 180px;
-            display: block;
-            object-fit: contain;
-        }
-        .upi-badge {
-            background: rgba(56, 189, 248, 0.08);
-            border: 1px dashed rgba(56, 189, 248, 0.4);
-            padding: 8px 14px;
-            border-radius: 10px;
-            font-size: 0.85rem;
-            color: #38bdf8;
-            font-weight: 700;
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        /* BOTTOM UTILITY TILES (ABOUT & CONTACT) */
-        .info-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 12px;
-            margin-top: 10px;
-            margin-bottom: 24px;
-        }
-        .info-tile {
-            background: rgba(11, 22, 54, 0.8);
-            border: 1px solid rgba(245, 158, 11, 0.3); /* Gold accent trim */
-            border-radius: 16px;
-            padding: 16px;
-            text-decoration: none;
-            color: #ffffff;
-            transition: all 0.2s ease;
-        }
-        .info-tile:active { background: rgba(56, 189, 248, 0.15); transform: scale(0.97); }
-        .info-tile-title {
-            font-size: 0.95rem;
-            font-weight: 800;
-            color: #f59e0b; /* Standout Gold Utility headings */
-            margin-bottom: 4px;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-        .info-tile-desc { font-size: 0.75rem; color: #94a3b8; font-weight: 500; }
-
-        /* INFINITE MOTIVATION SYSTEM SCROLLER */
-        .live-motivation-scroller {
-            max-height: 290px;
-            overflow-y: auto;
-            padding-right: 4px;
-            border: 1px solid rgba(56, 189, 248, 0.15);
-            border-radius: 16px;
-            background: rgba(2, 6, 23, 0.7);
-            padding: 12px;
-        }
-        .live-motivation-scroller::-webkit-scrollbar { width: 5px; }
-        .live-motivation-scroller::-webkit-scrollbar-thumb { background: #38bdf8; border-radius: 10px; }
         
-        .quote-item-row {
-            background: rgba(56, 189, 248, 0.03);
-            border-left: 4px solid #38bdf8;
-            padding: 12px;
-            border-radius: 0 12px 12px 0;
-            margin-bottom: 10px;
-            font-size: 0.88rem;
-            line-height: 1.5;
-            color: #e2e8f0;
-            font-weight: 600;
-        }
+        .metrics-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 24px; }
+        .metric-card { background: rgba(14, 26, 61, 0.8); border: 1px solid rgba(56, 189, 248, 0.15); border-radius: 16px; padding: 14px 4px; text-align: center; }
+        .metric-num { font-size: 1.3rem; font-weight: 900; color: #38bdf8; display: block; }
+        .metric-name { font-size: 0.68rem; color: #94a3b8; font-weight: 700; text-transform: uppercase; }
+        .rotating-banner { background: linear-gradient(90deg, #1e3a8a 0%, #0369a1 50%, #1d4ed8 100%); padding: 15px; border-radius: 16px; font-size: 0.9rem; font-weight: 700; text-align: center; margin-bottom: 24px; border-left: 5px solid #38bdf8; }
+        .subject-segment-headline { font-size: 1.05rem; font-weight: 800; margin-top: 8px; margin-bottom: 12px; text-transform: uppercase; color: #38bdf8; }
+        .resource-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+        .premium-blue-box { background: linear-gradient(135deg, #0b1536 0%, #050b1e 100%); border: 1px solid rgba(56, 189, 248, 0.35); }
+        .resource-btn { color: #ffffff; text-decoration: none; padding: 16px 12px; border-radius: 16px; text-align: center; font-size: 0.88rem; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 8px; }
+        .community-card { display: flex; align-items: center; justify-content: space-between; background: #0b132b; border: 1px solid rgba(56,189,248,0.2); padding: 16px; border-radius: 16px; color: #ffffff; text-decoration: none; font-weight: 700; font-size: 0.9rem; }
+        .join-pill { background: #38bdf8; color: #020617; font-size: 0.75rem; font-weight: 900; padding: 6px 14px; border-radius: 8px; }
+        
+        /* QR CODE FIXED BLOCK */
+        .donation-box { background: linear-gradient(135deg, #030712 0%, #0b1536 100%); border: 1px solid rgba(56, 189, 248, 0.25); text-align: center; }
+        .qr-frame-wrapper { background: #ffffff; padding: 12px; border-radius: 20px; display: inline-block; margin: 18px auto; border: 3px solid #38bdf8; }
+        .qr-img { width: 180px; height: 180px; display: block; object-fit: contain; }
+        .upi-badge { background: rgba(56, 189, 248, 0.08); border: 1px dashed rgba(56, 189, 248, 0.4); padding: 8px 14px; border-radius: 10px; font-size: 0.85rem; color: #38bdf8; font-weight: 700; }
+        
+        /* UTILITY GRID */
+        .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 10px; margin-bottom: 24px; }
+        .info-tile { background: rgba(11, 22, 54, 0.8); border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 16px; padding: 16px; text-decoration: none; color: #ffffff; }
+        .info-tile-title { font-size: 0.95rem; font-weight: 800; color: #f59e0b; margin-bottom: 4px; }
+        .info-tile-desc { font-size: 0.75rem; color: #94a3b8; }
+        
+        .live-motivation-scroller { max-height: 200px; overflow-y: auto; background: rgba(2, 6, 23, 0.7); padding: 12px; border-radius: 16px; }
+        .quote-item-row { background: rgba(56, 189, 248, 0.03); border-left: 4px solid #38bdf8; padding: 12px; margin-bottom: 10px; font-size: 0.88rem; color: #e2e8f0; font-weight: 600; text-align: left; }
 
-        /* PRIORITY OVERLAY ULTRA-STICKY GREEN FLOATING BUTTON */
+        /* FLOATING GREEN BUTTON WIDGET */
         .emergency-doubt-trigger {
             position: fixed;
             bottom: 20px;
@@ -343,16 +114,9 @@
             align-items: center;
             justify-content: center;
             gap: 10px;
-            z-index: 999999 !important; /* Forces it over everything across the homepage */
+            z-index: 999999 !important;
             text-transform: uppercase;
-            letter-spacing: 0.8px;
             border: 2px solid rgba(255,255,255,0.4);
-            animation: pulseWidget 2.5s infinite ease-in-out;
-        }
-        @keyframes pulseWidget {
-            0% { transform: translateX(-50%) scale(1); box-shadow: 0 12px 40px rgba(34, 197, 94, 0.6); }
-            50% { transform: translateX(-50%) scale(1.03); box-shadow: 0 15px 45px rgba(34, 197, 94, 0.8); }
-            100% { transform: translateX(-50%) scale(1); box-shadow: 0 12px 40px rgba(34, 197, 94, 0.6); }
         }
     </style>
 </head>
@@ -360,125 +124,95 @@
 
 <div class="container">
 
-    <!-- SUPREME HEADER ARCHITECTURE -->
     <div class="premium-header">
         <div class="brand-logo-text">⚡ FD HUB SYSTEM</div>
         <div class="brand-subtitle">The Medical Aspirants Ecosystem</div>
     </div>
 
-    <!-- MAIN OWNER BLOCK (ROYAL GOLD GRADIENT BACK) -->
+    <!-- OWNER BOX WITH GOLD TEXT -->
     <div class="mega-card hero-block">
-        <h2 style="color: #38bdf8; margin: 0; font-size: 1.6rem; letter-spacing: 0.5px; font-weight: 900;">🩺 FUTURE DOCTORS</h2>
+        <h2 style="color: #38bdf8; margin: 0; font-size: 1.6rem; font-weight: 900;">🩺 FUTURE DOCTORS</h2>
         <div class="avatar-frame">
             <img src="39015.png" alt="Naksh Chaudhary" class="avatar-img">
             <div class="verified-badge">✓</div>
         </div>
-        <p style="color: #94a3b8; font-weight: 800; margin-bottom: 2px; font-size: 0.95rem; letter-spacing: 0.5px;">🏆 Founder & Mentor</p>
-        
-        <!-- ROYAL GOLD TEXT PERFECTLY ASSIGNED -->
+        <p style="color: #94a3b8; font-weight: 800; margin-bottom: 2px; font-size: 0.95rem;">🏆 Founder & Mentor</p>
         <div class="royal-gold-text">Naksh Chaudhary</div>
-        
-        <span style="background: rgba(56, 189, 248, 0.15); color: #38bdf8; padding: 6px 16px; border-radius: 20px; font-size: 0.75rem; font-weight: 800; border: 1px solid rgba(56,189,248,0.35);">✨ Mission NEET 2027/2028 ✨</span>
+        <span style="background: rgba(56, 189, 248, 0.15); color: #38bdf8; padding: 6px 16px; border-radius: 20px; font-size: 0.75rem; font-weight: 800;">✨ Mission NEET 2027/2028 ✨</span>
     </div>
 
-    <!-- PLATFORM METRICS -->
     <div class="metrics-row">
-        <div class="metric-card"><span class="metric-num">500+</span><span class="metric-name">📚 Premium Notes</span></div>
-        <div class="metric-card"><span class="metric-num">1000+</span><span class="metric-name">📝 Chapter PYQs</span></div>
-        <div class="metric-card"><span class="metric-num">5000+</span><span class="metric-name">👨‍⚕️ Aspirants Trust</span></div>
+        <div class="metric-card"><span class="metric-num">500+</span><span class="metric-name">Notes</span></div>
+        <div class="metric-card"><span class="metric-num">1000+</span><span class="metric-name">PYQs</span></div>
+        <div class="metric-card"><span class="metric-num">5000+</span><span class="metric-name">Trust</span></div>
     </div>
 
-    <!-- ALERT BANNER -->
-    <div class="rotating-banner" id="bannerRotator">
-        **🩺 Aaj ki mehnat, kal naam ke aage "Dr." likhegi. 🔥**
-    </div>
+    <div class="rotating-banner" id="bannerRotator">🩺 Aaj ki mehnat, kal naam ke aage "Dr." likhegi. 🔥</div>
 
-    <!-- MAIN SYSTEM MATERIAL VAULT (UNIFORM BLUE BOXES) -->
+    <!-- NOTES SECTION -->
     <div class="mega-card">
         <div class="section-headline" style="color: #38bdf8;">📂 THE CORE NOTES VAULT</div>
-        
-        <!-- PHYSICS -->
         <div class="subject-segment-headline">⚡ Physics Booster</div>
-        <div class="resource-grid" style="margin-bottom: 22px;">
-            <a href="https://drive.google.com/drive/folders/1kRTvvUrbj9_5rwcYh3fsTxF66iH1Lz1I" target="_blank" class="resource-btn premium-blue-box"><span>📚</span> Chapter Notes</a>
-            <a href="https://drive.google.com/drive/folders/1kRTvvUrbj9_5rwcYh3fsTxF66iH1Lz1I" target="_blank" class="resource-btn premium-blue-box"><span>📝</span> Chapter PYQs</a>
-            <a href="https://drive.google.com/drive/folders/1kRTvvUrbj9_5rwcYh3fsTxF66iH1Lz1I" target="_blank" class="resource-btn premium-blue-box"><span>📐</span> Formula Sheet</a>
-            <a href="https://drive.google.com/drive/folders/1kRTvvUrbj9_5rwcYh3fsTxF66iH1Lz1I" target="_blank" class="resource-btn premium-blue-box"><span>⚙️</span> Derivations</a>
+        <div class="resource-grid" style="margin-bottom: 15px;">
+            <a href="https://drive.google.com/drive/folders/1kRTvvUrbj9_5rwcYh3fsTxF66iH1Lz1I" target="_blank" class="resource-btn premium-blue-box"><span>📚</span> Notes</a>
+            <a href="https://drive.google.com/drive/folders/1kRTvvUrbj9_5rwcYh3fsTxF66iH1Lz1I" target="_blank" class="resource-btn premium-blue-box"><span>📝</span> PYQs</a>
         </div>
-
-        <!-- CHEMISTRY -->
         <div class="subject-segment-headline">🧪 Chemistry Magic</div>
-        <div class="resource-grid" style="margin-bottom: 22px;">
-            <a href="https://drive.google.com/drive/folders/1NrYRFaTj9SZGj_evJgxt1nvT6ggYKGsh" target="_blank" class="resource-btn premium-blue-box"><span>📚</span> Chapter Notes</a>
-            <a href="https://drive.google.com/drive/folders/1NrYRFaTj9SZGj_evJgxt1nvT6ggYKGsh" target="_blank" class="resource-btn premium-blue-box"><span>📝</span> Chapter PYQs</a>
-            <a href="https://drive.google.com/drive/folders/1NrYRFaTj9SZGj_evJgxt1nvT6ggYKGsh" target="_blank" class="resource-btn premium-blue-box"><span>🔥</span> Imp Reactions</a>
-            <a href="https://drive.google.com/drive/folders/1NrYRFaTj9SZGj_evJgxt1nvT6ggYKGsh" target="_blank" class="resource-btn premium-blue-box"><span>💎</span> Core Concepts</a>
+        <div class="resource-grid" style="margin-bottom: 15px;">
+            <a href="https://drive.google.com/drive/folders/1NrYRFaTj9SZGj_evJgxt1nvT6ggYKGsh" target="_blank" class="resource-btn premium-blue-box"><span>📚</span> Notes</a>
+            <a href="https://drive.google.com/drive/folders/1NrYRFaTj9SZGj_evJgxt1nvT6ggYKGsh" target="_blank" class="resource-btn premium-blue-box"><span>📝</span> PYQs</a>
         </div>
-
-        <!-- BIOLOGY -->
         <div class="subject-segment-headline">🌿 Biology Core</div>
-        <div class="resource-grid" style="margin-bottom: 22px;">
-            <a href="https://drive.google.com/drive/folders/1sdaXLic_wnOs2BsfcgaJwT4CaQK6RTiO" target="_blank" class="resource-btn premium-blue-box"><span>📚</span> Chapter Notes</a>
-            <a href="https://drive.google.com/drive/folders/1sdaXLic_wnOs2BsfcgaJwT4CaQK6RTiO" target="_blank" class="resource-btn premium-blue-box"><span>📝</span> Chapter PYQs</a>
-            <a href="https://drive.google.com/drive/folders/1sdaXLic_wnOs2BsfcgaJwT4CaQK6RTiO" target="_blank" class="resource-btn premium-blue-box"><span>🎯</span> Short Notes</a>
-            <a href="https://drive.google.com/drive/folders/1sdaXLic_wnOs2BsfcgaJwT4CaQK6RTiO" target="_blank" class="resource-btn premium-blue-box"><span>🧬</span> Imp Diagrams</a>
-        </div>
-
-        <!-- MODULES -->
-        <div class="subject-segment-headline">📖 Premium Reference Modules</div>
-        <p style="color: #64748b; font-size: 0.8rem; margin-bottom: 12px; font-weight:600; padding-left:2px;">Allen, Aakash, aur standard coaching modules completely synced.</p>
         <div class="resource-grid">
-            <a href="https://drive.google.com/drive/folders/1948djiD7rn8ERKhsLRWZihk5LaGadAsw" target="_blank" class="resource-btn premium-blue-box"><span>🏢</span> Institute Modules</a>
-            <a href="https://drive.google.com/drive/folders/1948djiD7rn8ERKhsLRWZihk5LaGadAsw" target="_blank" class="resource-btn premium-blue-box"><span>📕</span> Reference Books</a>
+            <a href="https://drive.google.com/drive/folders/1sdaXLic_wnOs2BsfcgaJwT4CaQK6RTiO" target="_blank" class="resource-btn premium-blue-box"><span>📚</span> Notes</a>
+            <a href="https://drive.google.com/drive/folders/1sdaXLic_wnOs2BsfcgaJwT4CaQK6RTiO" target="_blank" class="resource-btn premium-blue-box"><span>📝</span> PYQs</a>
         </div>
     </div>
 
-    <!-- MOTIVATION SYSTEM RACK -->
+    <!-- MOTIVATION -->
     <div class="mega-card">
         <div class="section-headline" style="color: #38bdf8;">🔥 INFINITE RANKERS MOTIVATION</div>
         <div class="live-motivation-scroller">
-            <div class="quote-item-row">✨ Syllabus bada hai toh kya hua, tumhara hosla bhi toh chota nahi hai! 🩺🔥</div>
-            <div class="quote-item-row">✨ NCERT ki ek ek line tumhare selection ka rasta tay karegi. 📚🎯</div>
-            <div class="quote-item-row">✨ Jab log raat ko so rahe honge, tab tumhari mehnat itihaas likh rahi hogi. 🌌✍️</div>
-            <div class="quote-item-row">✨ White coat aise hi nahi milti, uske liye din raat jalna padta hai. 🔬🩺</div>
-            <div class="quote-item-row">✨ AIIMS Delhi ki deewarein tumhara intezaar kar rahi hain, ruke mat raho! 🏢💪</div>
+            <div class="quote-item-row">✨ Syllabus bada hai toh kya hua, hosla chota nahi hai! 🩺</div>
+            <div class="quote-item-row">✨ NCERT ki ek ek line selection ka rasta hai. 📚</div>
         </div>
     </div>
 
-    <!-- WHATSAPP ECOSYSTEM LINKS -->
-    <div class="mega-card">
-        <div class="section-headline" style="color: #38bdf8;">🗂️ NOTES & MATERIAL ECOSYSTEM</div>
-        <a href="https://chat.whatsapp.com/JORboxhbf3LL0sx6eHw8JB?mode=ac_t" target="_blank" class="community-card">
-            <span>📚 Join Material Group (PDFs & Updates Only)</span>
-            <span class="join-pill">Join Group</span>
-        </a>
-    </div>
-
-    <div class="mega-card">
-        <div class="section-headline" style="color: #38bdf8;">💬 DOUBT RESOLUTION ARENA</div>
-        <a href="https://chat.whatsapp.com/EtrXE1CSa3lFc7xnmDRBVt?mode=ac_t" target="_blank" class="community-card">
-            <span>🤝 Join Doubt Discussion & Help Arena</span>
-            <span class="join-pill">Join Group</span>
-        </a>
-    </div>
-
-    <!-- FIXED SUPPORT MODULE WITH WORKING IMAGE CONTAINER -->
+    <!-- QR CODE BOX -->
     <div class="mega-card donation-box">
-        <div class="section-headline" style="color: #38bdf8; border-bottom: 2px solid rgba(56, 189, 248, 0.15); justify-content: center;">💝 SUPPORT OUR MISSION</div>
-        <p style="color: #cbd5e1; font-size: 0.85rem; font-weight: 500;">Server aur domain maintain karne ke liye aapki choti si help bhi humein continuous free content dene me madad karegi.</p>
-        
+        <div class="section-headline" style="color: #38bdf8; justify-content: center;">💝 SUPPORT OUR MISSION</div>
         <div class="qr-frame-wrapper">
             <img src="qr.png" alt="Donation QR Code" class="qr-img">
         </div>
-        
         <br>
-        <div class="upi-badge">
-            <span>UPI ID:</span> 
-            <span style="color: #ffffff; letter-spacing: 0.5px;">nakshchaudhary@upi</span>
-        </div>
+        <div class="upi-badge">UPI ID: nakshchaudhary@upi</div>
     </div>
 
-    <!-- UTILITIES: ABOUT & CONTACT TILES (INTEGRATED GMAIL ID) -->
+    <!-- ABOUT & CONTACT (GMAIL ATTACHED) -->
     <div class="info-grid">
         <a href="#about" id="aboutTrigger" class="info-tile">
-            <div class="info-tile-title">ℹ️ 
+            <div class="info-tile-title">ℹ️ About Us</div>
+            <div class="info-tile-desc">Know our vision for medical edge.</div>
+        </a>
+        <a href="mailto:nakshchaudhary9456@gmail.com" class="info-tile">
+            <div class="info-tile-title">📩 Contact Us</div>
+            <div class="info-tile-desc">Connect directly via Official Gmail.</div>
+        </a>
+    </div>
+
+</div>
+
+<!-- GREEN FLOATING BUTTON -->
+<a href="https://chat.whatsapp.com/EtrXE1CSa3lFc7xnmDRBVt" target="_blank" class="emergency-doubt-trigger">
+    🟢 Instantly Ask Doubt Here
+</a>
+
+<script>
+    document.getElementById('aboutTrigger').addEventListener('click', (e) => {
+        e.preventDefault();
+        alert("✨ FUTURE DOCTORS HUB \n\nDesigned by Naksh Chaudhary. Created for extreme medical aspirants aiming for NEET 2027/2028. Supplying premium coaching modules and resources completely free!");
+    });
+</script>
+
+</body>
+</html>
